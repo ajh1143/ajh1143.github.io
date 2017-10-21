@@ -10,16 +10,25 @@ Some information about you!
 
 Languages:
 Python [Pandas / Numpy / Sci-Kit Learn]
+
 Java
+
 R
+
 SQL
 
 Skills/Knowledge Domains:
+
 Molecular, Cellular, Developmental Biology
+
 Neuroscience
+
 Experimental Design
+
 Hypothesis Testing
+
 Statistics
+
 Data Analysis / Data Science
 
 ### Contact me
