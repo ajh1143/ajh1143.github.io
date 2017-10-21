@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
 **Languages:**
 >- Python [Pandas / Numpy / Sci-Kit Learn]
 >- Java
