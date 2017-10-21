@@ -8,8 +8,20 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Languages:
+Python [Pandas / Numpy / Sci-Kit Learn]
+Java
+R
+SQL
+
+Skills/Knowledge Domains:
+Molecular, Cellular, Developmental Biology
+Neuroscience
+Experimental Design
+Hypothesis Testing
+Statistics
+Data Analysis / Data Science
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[ajh.206@outlook.com](mailto:email@domain.com)
