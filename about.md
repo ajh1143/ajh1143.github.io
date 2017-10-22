@@ -5,10 +5,11 @@ permalink: /about/
 ---
 
 **Languages:**
->- Python [Pandas / Numpy / Sci-Kit Learn]
+>- Python [Pandas / Numpy / Matplotlib / Sci-Kit Learn]
 >- Java
 >- R
 >- SQL
+>- HTML/CSS
 
 **Skills/Knowledge Domains:**
 >- Molecular, Cellular, Developmental Biology
@@ -18,6 +19,9 @@ permalink: /about/
 >- Statistics
 >- Data Analysis / Data Science
 >- Machine Learning 
+
+**Alma Mater:**
+>- The University of Washington - Seattle
 
 ### Contact me
 
