@@ -1,8 +1,3 @@
----
----
-
-@import "jekyll-theme-slate";
-
 //
 // IMPORTS
 //
@@ -160,7 +155,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  background-color: $orange;
+
 
   @include mobile {
     text-align: center;
@@ -285,7 +280,6 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
-  background-color: $orange;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
