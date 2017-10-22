@@ -1,5 +1,5 @@
 ---
-layout: Python/post
+layout: post
 title: It begins.
 ---
 
