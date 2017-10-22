@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
@@ -17,6 +17,7 @@ permalink: /about/
 >- Hypothesis Testing
 >- Statistics
 >- Data Analysis / Data Science
+>- Machine Learning 
 
 ### Contact me
 
