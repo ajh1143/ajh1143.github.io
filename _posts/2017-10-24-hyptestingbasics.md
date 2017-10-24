@@ -19,6 +19,7 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |(G)Compute probability of your results                 |
 |(H)Make a decision based on your p-value               |
 
+Here's a practical example using R:
 
 A new weight loss drug introduced by a British pharmaceutical company claims that, individuals who are clinically diagnosed as obese,
 will lose 10% of their body weight by taking two pills of this drug a day for 30 days (without changing their lifestyle). 
