@@ -86,6 +86,6 @@ T = (xBar – Mu) / (Sx/sqrt(n))
     p-value = .454484 
     p-value > 0.05, not significant
  
- Based on our calculated p-value, we reject our null hypothesis. 
+ Based on our calculated p-value, we fail to reject our null hypothesis. 
  We can conclude that when following the protocol, and ingesting 2 pills every day for 30 days, clinically obese 
  patients do not achieve a loss of weight equal to 10% of their starting weights under this experimental condition
