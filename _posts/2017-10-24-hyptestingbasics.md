@@ -19,15 +19,4 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |(G)Make a decision based on your p-value               |
 
 
-In college, I read a lot of white papers, A LOT OF THEM. Thankfully, there is a methodology to dissecting the often dense material
-that goes hand-in-hand with the statistical analysis of hypothesis testing. 
 
-BQMOC'ing!
-   
-|BQMOC|
-|-----------|
-|Background|
-|Question|
-|Method|
-|Observations|
-|Conclusion|
