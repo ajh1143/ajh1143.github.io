@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title: Hypothesis Testing: A Primer
+title: Hypothesis Testing - A Primer
 ---
 
 Hypothesis Testing - Main Steps
