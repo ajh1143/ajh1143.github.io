@@ -25,8 +25,12 @@ that goes hand-in-hand with the statistical analysis of hypothesis testing.
 
 BQMOC'ing!
     
->Background
-    >Question
-        >Method
-            >Observations
-                >Conclusion
+    >Background
+
+        >Question
+
+            >Method
+        
+                >Observations
+            
+                    >Conclusion
