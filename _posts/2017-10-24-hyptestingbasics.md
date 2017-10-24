@@ -20,10 +20,10 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |(H)Make a decision based on your p-value               |
 
 
-#A new weight loss drug introduced by a British pharmaceutical company claims that, individuals who are clinically diagnosed as obese,
-#will lose 10% of their body weight by taking two pills of this drug a day for 30 days (without changing their lifestyle). 
-#Prior to approving this drug for US consumers, FDA wanted to test the potency of the drug. 
-#A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
+A new weight loss drug introduced by a British pharmaceutical company claims that, individuals who are clinically diagnosed as obese,
+will lose 10% of their body weight by taking two pills of this drug a day for 30 days (without changing their lifestyle). 
+Prior to approving this drug for US consumers, FDA wanted to test the potency of the drug. 
+A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
 
 Weightloss.csv
 
@@ -73,6 +73,7 @@ T = (xBar – Mu) / (Sx/sqrt(n))
 
 
     CODE SOLUTION
+    WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
     WeightLoss <- startweight - finalweight 
     samplePercentChange <- WeightLoss/startweight
     sampleChangeMean <- mean(percentChange)
