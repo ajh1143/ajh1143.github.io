@@ -25,28 +25,28 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 #Prior to approving this drug for US consumers, FDA wanted to test the potency of the drug. 
 #A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
 
-                                        |ID | Start Weight |  Final Weight|
-                                        |---|--------------|-------------|
-                                        |1  |     321      |    300     |
-                                        |2  |     300      |    295     |
-                                        |3  |     350      |    345     |
-                                        |4  |     360      |    300     |
-                                        |5  |     400      |    350     |
-                                        |6  |     250      |    200     |
-                                        |7  |     281      |    270     |
-                                        |8  |     278      |    274     |
-                                        |9  |     330      |    350     |
-                                        |10 |     374      |    320     |
-                                        |11 |     280      |    250     |
-                                        |12 |  421         |   400      |
-                                        |13  | 245          |    245     |
-                                        |14  | 352          |    325     |
-                                        |15  | 312          |    300     |
-                                        |16  | 279          |    270     |
-                                        |17  | 233          |    230     |
-                                        |18  | 310          |    300     |
-                                        |19  | 265          |    280     |
-                                        |20  | 275          |    250     |
+|ID | Start Weight |  Final Weight|
+|---|--------------|-------------|
+|1  |     321      |    300     |
+|2  |     300      |    295     |
+|3  |     350      |    345     |
+|4  |     360      |    300     |
+|5  |     400      |    350     |
+|6  |     250      |    200     |
+|7  |     281      |    270     |
+|8  |     278      |    274     |
+|9  |     330      |    350     |
+|10 |     374      |    320     |
+|11 |     280      |    250     |
+|12 |  421         |   400      |
+|13  | 245          |    245     |
+|14  | 352          |    325     |
+|15  | 312          |    300     |
+|16  | 279          |    270     |
+|17  | 233          |    230     |
+|18  | 310          |    300     |
+|19  | 265          |    280     |
+|20  | 275          |    250     |
 
 
 Null Hypothesis:
@@ -69,7 +69,7 @@ that the participants adhered to the protocols of the study, and that our data i
 
 An alpha level of 0.05 was selected for this analysis.
 
-CODE SOLUTION
+    CODE SOLUTION
     WeightLoss <- startweight - finalweight 
     samplePercentChange <- WeightLoss/startweight
     sampleChangeMean <- mean(percentChange)
