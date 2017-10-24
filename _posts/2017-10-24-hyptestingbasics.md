@@ -3,6 +3,11 @@ layout: post
 title: Hypothesis Testing - A Primer
 ---
 
+Hypothesis testing is a powerful metric for scientists and analysts alike. 
+
+Thankfully, it is a fairly straightforward endeavor, which I've outlined below. 
+
+
 Hypothesis Testing - Main Steps
     
 *(A)Declare your null hypothesis (Ho)
