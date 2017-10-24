@@ -27,7 +27,7 @@ A clinical trial was conducted with a population of 20 obese individuals, treate
 
 Weightloss.csv
 
-|:ID: |: Start Weight :|:  Final Weight:|
+|- ID - |- Start Weight -|-  Final Weight -|
 |:---:|:--------------:|:-------------:|
 |1  |     321      |    300     |
 |2  |     300      |    295     |
