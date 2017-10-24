@@ -26,7 +26,7 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 #A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
 
                                         |ID | Start Weight |  Final Weight|
-                                        |---|--------------|------------- |
+                                        |---|--------------|-------------|
                                         |1  |     321      |    300     |
                                         |2  |     300      |    295     |
                                         |3  |     350      |    345     |
@@ -68,8 +68,6 @@ We assumed that our data is continuous, that our group is the result of random s
 that the participants adhered to the protocols of the study, and that our data is based on a normal distribution. 
 
 An alpha level of 0.05 was selected for this analysis.
-
----------------------------------------------------------------------------------------------------------------------------------------
 
 CODE SOLUTION
     WeightLoss <- startweight - finalweight 
