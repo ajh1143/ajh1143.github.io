@@ -27,7 +27,7 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 
 Weightloss.csv
 
-|ID | Start Weight |  Final Weight|
+|:ID: |: Start Weight :|:  Final Weight:|
 |:---:|:--------------:|:-------------:|
 |1  |     321      |    300     |
 |2  |     300      |    295     |
