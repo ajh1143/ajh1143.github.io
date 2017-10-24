@@ -12,11 +12,12 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |-------------------------------------------------------|
 |(A)Declare your null hypothesis (Ho)                   |
 |(B)Declare your alternative hypothesis (Ha)            |
-|(C)Set your significance level(alpha α) for your assay |
-|(D)Conduct your experiment                             |
-|(E)Record observations/results                         |
-|(F)Compute probability of your results                 |
-|(G)Make a decision based on your p-value               |
+|(C)State your assumptions about your dataset           |
+|(D)Set your significance level(alpha α) for your assay |
+|(E)Conduct your experiment                             |
+|(F)Record observations/results                         |
+|(G)Compute probability of your results                 |
+|(H)Make a decision based on your p-value               |
 
 
 #A new weight loss drug introduced by a British pharmaceutical company claims that, individuals who are clinically diagnosed as obese,
@@ -50,15 +51,15 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 
 Null Hypothesis:
 Our null hypothesis is that clinically obese patients following the suggested protocol will not lose 10% of their starting weights.
-Ho : Weight Lost != 10%
+Ho : Weight Lost = 10%
 
 Alternative Hypothesis:
 Our alternative hypothesis is that clinically obese patients following the suggested protocol will lose 10% of their starting weights.
-Ha : Weight Lost  = 10%
+Ha : Weight Lost  != 10%
 
 Interpretation Conditions:
-Ho : Mu != 10%
-Ha : Mu = 10%
+Ho : Mu = 10%
+Ha : Mu != 10%
 
 Our analysis relies on utilizing the T-Statistic, where:
 T = (xBar – Mu) / (Sx/sqrt(n))
