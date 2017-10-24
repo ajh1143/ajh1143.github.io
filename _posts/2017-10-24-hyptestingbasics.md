@@ -80,11 +80,10 @@ T = (xBar – Mu) / (Sx/sqrt(n))
     tenPercent ← 0.10
     sdSamples <- sd(samplePercentChange) 
     T = ( sampleChangeMean – tenPercent ) / ( sqrt(sdSamples) / sqrt(20) )
-      =  ( 0.05546201 – 0.10 ) / (sqrt(0.06803612) / sqrt(20) ) 
       = -0.7636174 
     T-Crit = 2.093
     p-value = .454484 
-    p-value < 0.05, not significant
+    p-value > 0.05, not significant
  
  Based on our calculated p-value, we reject our null hypothesis. 
  We can conclude that when following the protocol, and ingesting 2 pills every day for 30 days, clinically obese 
