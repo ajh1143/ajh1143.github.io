@@ -23,13 +23,11 @@ In college, I read a lot of white papers, A LOT OF THEM. Thankfully, there is a 
 that goes hand-in-hand with the statistical analysis of hypothesis testing. 
 
 BQMOC'ing!
-    
-    >Background
-
-        >Question
-
-            >Method
-        
-                >Observations
-            
-                    >Conclusion
+   
+|BQMOC|
+|-----------|
+|Background|
+|Question|
+|Method|
+|Observations|
+|Conclusion|
