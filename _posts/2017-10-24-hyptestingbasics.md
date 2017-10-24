@@ -23,7 +23,6 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 #will lose 10% of their body weight by taking two pills of this drug a day for 30 days (without changing their lifestyle). 
 #Prior to approving this drug for US consumers, FDA wanted to test the potency of the drug. 
 #A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
----------------------------------------------------------------------------------------------------------------------------------------
 
                                         |ID | Start Weight |  Final Weight|
                                         |---|--------------|------------- |
@@ -39,16 +38,16 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
                                         |10 |     374      |    320     |
                                         |11 |     280      |    250     |
                                         |12 |  421         |   400      |
-                                        13  | 245          |    245     |
-                                        14  | 352          |    325     |
-                                        15  | 312          |    300     |
-                                        16  | 279          |    270     |
-                                        17  | 233          |    230     |
-                                        18  | 310          |    300     |
-                                        19  | 265          |    280     |
-                                        20  | 275          |    250     |
+                                        |13  | 245          |    245     |
+                                        |14  | 352          |    325     |
+                                        |15  | 312          |    300     |
+                                        |16  | 279          |    270     |
+                                        |17  | 233          |    230     |
+                                        |18  | 310          |    300     |
+                                        |19  | 265          |    280     |
+                                        |20  | 275          |    250     |
 
----------------------------------------------------------------------------------------------------------------------------------------
+
 Null Hypothesis:
 Our null hypothesis is that clinically obese patients following the suggested protocol will not lose 10% of their starting weights.
 Ho : Weight Lost != 10%
