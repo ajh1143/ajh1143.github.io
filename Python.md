@@ -6,3 +6,14 @@ permalink: /Python/
 Python Page
 
 Page for code samples, neat tricks, and techqniques of data-centric packages 
+
+
+---------------------------
+
+Visual Algorithms:
+https://visualgo.net/en
+
+Great site to reference/review algorithms with animations
+
+---------------------------
+
