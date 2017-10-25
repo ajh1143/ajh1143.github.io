@@ -5,7 +5,7 @@ permalink: /Python/
 ---
 Python Page
 
-Page for code samples, neat tricks, and techqniques of data-centric packages 
+Page for code samples, neat tricks, and techniques of data-centric packages 
 
 
 ---------------------------
