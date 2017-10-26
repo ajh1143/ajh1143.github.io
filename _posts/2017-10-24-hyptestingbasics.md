@@ -76,31 +76,27 @@ An alpha level of 0.05 was selected for this analysis.
 Our analysis relies on utilizing the T-Statistic, where:
 T = (xBar – Mu) / (Sx/sqrt(n))
 
-``
+
    CODE SOLUTION
 
-   WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
-   
+   `WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
    WeightLoss <- startweight - finalweight 
-   
    samplePercentChange <- WeightLoss/startweight
-   
    sampleChangeMean <- mean(percentChange)
-   
    tenPercent ← 0.10
+   sdSamples <- sd(samplePercentChange)`
    
-   sdSamples <- sd(samplePercentChange) 
-   T = ( sampleChangeMean – tenPercent ) / ( sqrt(sdSamples) / sqrt(20) )
+   `T = ( sampleChangeMean – tenPercent ) / ( sqrt(sdSamples) / sqrt(20) )
    
-   = -0.7636174 
+   = -0.7636174` 
    
    T-Crit = 2.093
    
-   p-value = .454484 
+   `p-value = .454484 
    
-   p-value > 0.05, not significant
+   p-value > 0.05, not significant`
    
-  ``
+  
  
  Based on our calculated p-value, we fail to reject our null hypothesis. 
  We can conclude that when following the protocol, and ingesting 2 pills every day for 30 days, clinically obese 
