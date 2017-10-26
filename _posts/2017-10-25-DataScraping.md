@@ -70,4 +70,3 @@ def df_print(file, year, populated_data_dict):
 
 if __name__ == '__main__':
 core_logic()
-`
