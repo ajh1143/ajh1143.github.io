@@ -14,24 +14,26 @@ In this case, we're going to probe the US Census website, and grab all the data 
 Additionally, we want to make that data accessible as quickly as possible, so we're also going
 to use the Pandas package to quickly transform the data into a dataframe, which will allow us to 
 analyze the data immediately with Pandas, Numpy, or R. 
-`
-"""
-AJH
-BeautifulSoup, Pandas, Python web scraper
-"""
 
-from bs4 import BeautifulSoup
-from urllib.request import urlopen
-import pandas as pd
-import sys
 
-#Retrieves the user's desired text file output location in the form of C:\User\Name\Location
-def file_location():
-    file_output_location = input("Enter a directory for output of generated text files.")
-    return file_output_location
+    """
+    AJH
+    BeautifulSoup, Pandas, Python web scraper
+    """
 
-#Scraping method, iterates through each web page based on decade and creates a dict of the scraped data to be passed to df_print()
-def core_logic():
+    from bs4 import BeautifulSoup
+    from urllib.request import urlopen
+    import pandas as pd
+    import sys
+
+    #Retrieves the user's desired text file output location in the form of C:\User\Name\Location
+    def file_location():
+        file_output_location = input("Enter a directory for output of generated text files.")
+        return file_output_location
+
+    #Scraping method, iterates through each web page based on decade and creates a dict of the scraped data to be passed to                 
+    df_print()
+    def core_logic():
     output = file_location()
 
     for decade in range(1880, 2020, 10):
@@ -56,8 +58,8 @@ def core_logic():
             data['Number_Female'].append(z[4])
         df_print(output, decade, data)
 
-#Transforms the dataset into a DataFrame using Pandas, prints to the previously acquired output location        
-def df_print(file, year, populated_data_dict):
+    #Transforms the dataset into a DataFrame using Pandas, prints to the previously acquired output location        
+    def df_print(file, year, populated_data_dict):
     file_output = file
     decade = year
     data = populated_data_dict
@@ -68,5 +70,5 @@ def df_print(file, year, populated_data_dict):
     print (df)
     sys.stdout.close()
 
-if __name__ == '__main__':
-core_logic()
+    if __name__ == '__main__':
+    core_logic()
