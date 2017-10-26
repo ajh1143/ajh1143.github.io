@@ -12,4 +12,9 @@ Page for code samples, neat tricks, links, and techniques of data-centric packag
 |[VisuAlgo](https://visualgo.net/en "Visit VisuAlgo!")|  
 |Great site to reference/review algorithms with animations|
 
+|Leet Code:|
+|----------------|
+|[Leet Code](https://leetcode.com/ "Visit Leet Code!")
+|Practice makes perfect|
+
 
