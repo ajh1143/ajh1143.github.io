@@ -79,22 +79,22 @@ T = (xBar – Mu) / (Sx/sqrt(n))
 
    CODE SOLUTION
 
-   `WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
-   WeightLoss <- startweight - finalweight 
-   samplePercentChange <- WeightLoss/startweight
-   sampleChangeMean <- mean(percentChange)
-   tenPercent ← 0.10
-   sdSamples <- sd(samplePercentChange)`
+   `WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")`
+   
+   `WeightLoss <- startweight - finalweight` 
+   `samplePercentChange <- WeightLoss/startweight`
+   `sampleChangeMean <- mean(percentChange)`
+   `tenPercent ← 0.10`
+   `sdSamples <- sd(samplePercentChange)`
    
    `T = ( sampleChangeMean – tenPercent ) / ( sqrt(sdSamples) / sqrt(20) )
+     = -0.7636174` 
    
-   = -0.7636174` 
+   `T-Crit = 2.093`
    
-   T-Crit = 2.093
+   `p-value = .454484` 
    
-   `p-value = .454484 
-   
-   p-value > 0.05, not significant`
+   p-value > 0.05, not significant
    
   
  
