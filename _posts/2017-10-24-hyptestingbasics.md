@@ -88,7 +88,7 @@ An alpha level of 0.05 was selected for this analysis.
 `(E)`
 
 Our analysis relies on utilizing the T-Statistic, where:
-T = (xBar – Mu) / (Sx/sqrt(n))
+<img src="/Images/T-equation.png" class="inline"/>
 
 
    CODE SOLUTION
