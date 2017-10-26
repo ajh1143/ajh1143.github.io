@@ -20,7 +20,7 @@ permalink: /Python/
 
 ----------------------------------------------------------------
 
-|Datasets for analysis|
+|Datasets for analysis:|
 |---------------------|
 |[Kaggle Datasets](https://www.kaggle.com/datasets "Get some data")|
 |Try to find fun correlations to consider               |
