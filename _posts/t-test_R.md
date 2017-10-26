@@ -1,0 +1,48 @@
+---
+layout: post
+title: T-Test
+---
+
+Almost anything you need for aggressive data-fu, is ready to go in R. 
+
+The T-test is one of these items, and will make you life easier.
+
+Specifically, t.test()
+
+Here's a brief overview of the method in R:
+
+t.test(x, y = NULL,
+       alternative = c("two.sided", "less", "greater"),
+       mu = 0, paired = FALSE, var.equal = FALSE,
+       conf.level = 0.95, ...)
+     
+As you can see, it's stunningly simple, and concise. 
+
+So, writing code to perform this test is easy.
+
+Understanding when it's appropriate to implement the test is where you'll spend your time. 
+
+A basic model of situations follows, 
+
+|T-Test|
+|------|
+|Conditions and Assumptions:|
+|N = Small, N < 30|
+|Data is continuous or ordinal|
+|Randomly, representatively sampled|
+|Normally distributed|
+|Equal variance -- Otherwise consider Welch's|
+|Common Uses:|
+|Hypothesis testing of equality means between two populations|
+|Paired Test| 
+|One sample location test|
+
+
+
+
+
+
+
+
+
+
