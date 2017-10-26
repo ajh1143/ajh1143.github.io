@@ -19,12 +19,15 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |(G)Compute probability of your results                 |
 |(H)Make a decision based on your p-value               |
 
+
+
 Here's a practical example using R:
 
 A new weight loss drug introduced by a British pharmaceutical company claims that, individuals who are clinically diagnosed as obese,
 will lose 10% of their body weight by taking two pills of this drug a day for 30 days (without changing their lifestyle). 
 Prior to approving this drug for US consumers, FDA wanted to test the potency of the drug. 
 A clinical trial was conducted with a population of 20 obese individuals, treated with this drug for 30 days. 
+
 
 Weightloss.csv
 
@@ -52,10 +55,15 @@ Weightloss.csv
 |20 |     275      |    250     |
 
 
+
+`(A)`
+
 Null Hypothesis:
 Our null hypothesis is that clinically obese patients following the suggested protocol will not lose 10% of their starting weights.
 
 Ho : Weight Lost != 10%
+
+`(B)`
 
 Alternative Hypothesis:
 Our alternative hypothesis is that clinically obese patients following the suggested protocol will lose 10% of their starting weights.
@@ -68,10 +76,16 @@ Ho : Mu != 10%
 
 Ha : Mu = 10%
 
+`(C)`
+
 We assumed that our data is continuous, that our group is the result of random sampling, 
 that the participants adhered to the protocols of the study, and that our data is based on a normal distribution. 
 
+`(D)`
+
 An alpha level of 0.05 was selected for this analysis.
+
+`(E)`
 
 Our analysis relies on utilizing the T-Statistic, where:
 T = (xBar – Mu) / (Sx/sqrt(n))
