@@ -61,7 +61,9 @@ Our alternative hypothesis is that clinically obese patients following the sugge
 Ha : Weight Lost  = 10%
 
 Interpretation Conditions:
+
 Ho : Mu != 10%
+
 Ha : Mu = 10%
 
 We assumed that our data is continuous, that our group is the result of random sampling, 
