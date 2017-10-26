@@ -1,0 +1,77 @@
+---
+layout:post
+title: Fun with Data Scraping
+---
+
+A Python, BeautifulSoup and Pandas based project to scrape the top 200 baby names for each decade from 1880-2010 
+from US census information found online. Will obtain the top names, and the number of babies with each name in that decade, 
+categorized as male and female. Output will be generated to a user defined location as a series of text files as structured 
+data frames, for easy statistical analysis/manipulation with R or Pandas.
+
+So, let's say you want to grab data from a website, but there's no API to connect to?
+
+What do you do?
+
+One solution is to utilize a scripting language to engage in data scraping.
+
+In this case, we're going to probe the US Census website, and grab all the data we can.
+
+Additionally, we want to make that data accessible as quickly as possible, so we're also going
+to use the Pandas package to quickly transform the data into a dataframe, which will allow us to 
+analyze the data immediately with Pandas, Numpy, or R. 
+
+"""
+AJH
+BeautifulSoup, Pandas, Python web scraper
+"""
+
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+import pandas as pd
+import sys
+
+#Retrieves the user's desired text file output location in the form of C:\User\Name\Location
+def file_location():
+    file_output_location = input("Enter a directory for output of generated text files.")
+    return file_output_location
+
+#Scraping method, iterates through each web page based on decade and creates a dict of the scraped data to be passed to df_print()
+def core_logic():
+    output = file_location()
+
+    for decade in range(1880, 2020, 10):
+        page_decade = "https://www.ssa.gov/oact/babynames/decades/names"+str(decade)+"s.html"
+        soup = BeautifulSoup(urlopen(page_decade))
+        targets = soup.find_all("tr",{"align":"right"})[1:]
+        data = {
+            'Rank' : [],
+            'Name_Male' : [],
+            'Number_Male' : [],
+            'Name_Female' : [],
+            'Number_Female' : []
+        }
+
+        for target in targets:
+            target_acquired = target.get_text()
+            z = target_acquired.split()
+            data['Rank'].append(z[0])
+            data['Name_Male'].append(z[1])
+            data['Number_Male'].append(z[2])
+            data['Name_Female'].append(z[3])
+            data['Number_Female'].append(z[4])
+        df_print(output, decade, data)
+
+#Transforms the dataset into a DataFrame using Pandas, prints to the previously acquired output location        
+def df_print(file, year, populated_data_dict):
+    file_output = file
+    decade = year
+    data = populated_data_dict
+    pd.set_option('display.max_rows', 1000)
+    df = pd.DataFrame(data)
+    df = df[['Rank', 'Name_Male','Number_Male','Name_Female','Number_Female']]
+    sys.stdout = open(file_output+"/"+str(decade)+".txt", "w")
+    print (df)
+    sys.stdout.close()
+
+if __name__ == '__main__':
+core_logic()
