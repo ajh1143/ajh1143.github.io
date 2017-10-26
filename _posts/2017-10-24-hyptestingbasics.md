@@ -54,10 +54,12 @@ Weightloss.csv
 
 Null Hypothesis:
 Our null hypothesis is that clinically obese patients following the suggested protocol will not lose 10% of their starting weights.
+
 Ho : Weight Lost != 10%
 
 Alternative Hypothesis:
 Our alternative hypothesis is that clinically obese patients following the suggested protocol will lose 10% of their starting weights.
+
 Ha : Weight Lost  = 10%
 
 Interpretation Conditions:
@@ -76,16 +78,26 @@ T = (xBar – Mu) / (Sx/sqrt(n))
 
 ``
 CODE SOLUTION
+
    WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
+   
    WeightLoss <- startweight - finalweight 
+   
    samplePercentChange <- WeightLoss/startweight
+   
    sampleChangeMean <- mean(percentChange)
+   
    tenPercent ← 0.10
+   
    sdSamples <- sd(samplePercentChange) 
    T = ( sampleChangeMean – tenPercent ) / ( sqrt(sdSamples) / sqrt(20) )
-     = -0.7636174 
+   
+   = -0.7636174 
+   
    T-Crit = 2.093
+   
    p-value = .454484 
+   
    p-value > 0.05, not significant
   ``
  
