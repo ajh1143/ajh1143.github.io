@@ -16,11 +16,11 @@ permalink: /Python/
 |Leet Code:|
 |----------------|
 |[Leet Code](https://leetcode.com/ "Visit Leet Code!")
-|Practice makes perfect|
+|Practice makes perfect                                 |
 
 ----------------------------------------------------------------
 
 |Datasets for analysis|
 |---------------------|
 |[Kaggle Datasets](https://www.kaggle.com/datasets "Get some data")|
-|Try to find fun correlations to consider|
+|Try to find fun correlations to consider               |
