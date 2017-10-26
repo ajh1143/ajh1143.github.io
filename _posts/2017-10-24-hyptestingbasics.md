@@ -77,7 +77,7 @@ Our analysis relies on utilizing the T-Statistic, where:
 T = (xBar – Mu) / (Sx/sqrt(n))
 
 ``
-CODE SOLUTION
+   CODE SOLUTION
 
    WeightLoss <- read.csv("https://s3.amazonaws.com/MyData_assets/WeightLoss.csv")
    
@@ -99,6 +99,7 @@ CODE SOLUTION
    p-value = .454484 
    
    p-value > 0.05, not significant
+   
   ``
  
  Based on our calculated p-value, we fail to reject our null hypothesis. 
