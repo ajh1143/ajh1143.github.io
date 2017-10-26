@@ -10,6 +10,7 @@ permalink: /Python/
 |-------------------------------------------------------|
 |[VisuAlgo](https://visualgo.net/en "Visit VisuAlgo!")|  
 |Great site to reference/review algorithms with animations|
+|------------------------|
 |Leet Code:|
 |----------------|
 |[Leet Code](https://leetcode.com/ "Visit Leet Code!")
