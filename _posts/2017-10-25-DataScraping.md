@@ -1,6 +1,6 @@
 ---
-layout:post
-title: Fun with Data Scraping
+layout: post
+title: "Fun with Data Scraping"
 ---
 
 A Python, BeautifulSoup and Pandas based project to scrape the top 200 baby names for each decade from 1880-2010 
