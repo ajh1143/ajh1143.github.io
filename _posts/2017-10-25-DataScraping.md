@@ -19,7 +19,7 @@ In this case, we're going to probe the US Census website, and grab all the data 
 Additionally, we want to make that data accessible as quickly as possible, so we're also going
 to use the Pandas package to quickly transform the data into a dataframe, which will allow us to 
 analyze the data immediately with Pandas, Numpy, or R. 
-
+```
 """
 AJH
 BeautifulSoup, Pandas, Python web scraper
@@ -75,3 +75,4 @@ def df_print(file, year, populated_data_dict):
 
 if __name__ == '__main__':
 core_logic()
+```
