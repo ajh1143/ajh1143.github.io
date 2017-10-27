@@ -15,7 +15,7 @@ Additionally, we want to make that data accessible as quickly as possible, so we
 to use the Pandas package to quickly transform the data into a dataframe, which will allow us to 
 analyze the data immediately with Pandas, Numpy, or R. 
 
-
+```python
     """
     AJH
     BeautifulSoup, Pandas, Python web scraper
@@ -34,7 +34,7 @@ analyze the data immediately with Pandas, Numpy, or R.
     #Scraping method, iterates through each web page based on decade and creates a dict of the scraped data to be passed to                 
     df_print()
     def core_logic():
-    output = file_location()
+        output = file_location()
 
     for decade in range(1880, 2020, 10):
         page_decade = "https://www.ssa.gov/oact/babynames/decades/names"+str(decade)+"s.html"
@@ -60,15 +60,16 @@ analyze the data immediately with Pandas, Numpy, or R.
 
     #Transforms the dataset into a DataFrame using Pandas, prints to the previously acquired output location        
     def df_print(file, year, populated_data_dict):
-    file_output = file
-    decade = year
-    data = populated_data_dict
-    pd.set_option('display.max_rows', 1000)
-    df = pd.DataFrame(data)
-    df = df[['Rank', 'Name_Male','Number_Male','Name_Female','Number_Female']]
-    sys.stdout = open(file_output+"/"+str(decade)+".txt", "w")
-    print (df)
-    sys.stdout.close()
+        file_output = file
+        decade = year
+        data = populated_data_dict
+        pd.set_option('display.max_rows', 1000)
+        df = pd.DataFrame(data)
+        df = df[['Rank', 'Name_Male','Number_Male','Name_Female','Number_Female']]
+        sys.stdout = open(file_output+"/"+str(decade)+".txt", "w")
+        print (df)
+        sys.stdout.close()
 
     if __name__ == '__main__':
-    core_logic()
+        core_logic()
+```
