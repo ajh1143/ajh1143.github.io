@@ -5,9 +5,9 @@ title: "Fun with Data Scraping"
 
 So, you want to grab data from a website, but there's no API to connect to?
 
-What do you do?
+What do you do? You get your hands dirty.
 
-One solution is to utilize a scripting language to engage in data scraping.
+One solution is to utilize a scripting language to engage in manual data scraping.
 
 In this case, we're going to probe the US Census website, and grab all the data we can.
 
