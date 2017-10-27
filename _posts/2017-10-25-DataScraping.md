@@ -33,8 +33,9 @@ analyze the data immediately with Pandas, Numpy, or R.
         for output of generated text files.")
         return file_output_location
 
-    #Scraping method, iterates through each web page based on 
-    decade and creates a dict of the scraped data to be passed to                 
+    #Scraping method, iterates through each web page 
+    based on decade and creates a dict of the scraped 
+    data to be passed to                 
     df_print()
     def core_logic():
         output = file_location()
@@ -43,7 +44,8 @@ analyze the data immediately with Pandas, Numpy, or R.
         page_decade = "https://www.ssa.gov/oact/
         babynames/decades/names"+str(decade)+"s.html"
         soup = BeautifulSoup(urlopen(page_decade))
-        targets = soup.find_all("tr",{"align":"right"})[1:]
+        targets = soup.find_all("tr",{"align":"right"})
+                                                   [1:]
         data = {
             'Rank' : [],
             'Name_Male' : [],
@@ -62,7 +64,7 @@ analyze the data immediately with Pandas, Numpy, or R.
             data['Number_Female'].append(z[4])
         df_print(output, decade, data)
 
-    #Transforms the dataset into a DataFrame using Pandas,
+    #Transforms the dataset into a DataFrame using Pandas
     prints to the previously acquired output location        
     def df_print(file, year, populated_data_dict):
         file_output = file
