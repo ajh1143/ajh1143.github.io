@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Regression Analysis 
+title: Linear Regression Analysis - Part 1
 ---
 
 Let's talk about correlation.
@@ -16,12 +16,13 @@ you should continue whatever reasoning led you to that point, but refine your me
 
 Should you find correlation, you'll be presented with a number. That number will tell you a lot. It will tell you whether
 the relationship is positive, with a upward sloping line, or a negative one, with a downward slope. It will tell you how strong 
-the relationship is, a higher number implying a more useful predictive quality. Let's say you find a correlation of 0.75,
-this simply means that 75% of your Y's behaviour can be predicted by variable X. We'd all like to be able to predict future
-outcomes, and linear correlation is one way we can. It's not without risks if you dump resources into a faulty correlation, but 
-when done correctly, the rewards can be worth it.
+the relationship is, a higher number implying a more useful predictive quality. 
 
-The most common method for linear regression is the Pearson method, a parametric test. 
+Let's say you find a correlation of 0.75, this simply means that 75% of your Y's behaviour can be predicted by variable X. 
+We'd all like to be able to predict future outcomes, and linear correlation is one way we can. It's not without risks if you dump resources into a faulty correlation, but when done correctly, the rewards can be worth the investment. 
+
+The most common method for linear regression is the Pearson method, a parametric test which yields a correlation coefficient we
+can use for modeling. 
 
 Here's a bried overview
 
