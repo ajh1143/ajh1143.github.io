@@ -1,0 +1,60 @@
+---
+layout: post
+title: Linear Regression Analysis - Part 2
+---
+
+Now that you understand the Pearson test, let's start working towards a real world example. But first...
+
+You're likely going to be pulling your variables from a structured database, so, what would this look like?
+
+Table - ProductInformation
+|Brand|Price| Rating | SalesTerritory | Sales |
+|:-:|:-:|:-:|:-:|:-:|
+|Brand A| 50.00 | 2.5 | Territory A| 323|
+|Brand A| 50.00 | 5.0 | Territory B| 891|
+|Brand A| 50.00 | 1.0 | Territory C| 104|
+|Brand B| 45.00 | 5.0 | Territory A| 1240|
+|Brand B| 45.00 | 4.0 | Territory B| 843|
+|Brand B| 45.00 | 4.0 | Territory C| 923|
+|Brand C| 55.00 | 3.5 | Territory A| 409 |
+|Brand C| 55.00 | 5.0 | Territory B| 822| 
+|Brand C| 55.00 | 4.5 | Territory C| 659 |
+
+SQL is fun, and easy to learn! It's worth your time to get a handle of the basic syntax, which is highly transferable between
+flavors; SQL, MySQL, PostgreSQL etc all share largely the same fundamental querying verbage. I'll give you a few simple functional
+examples.
+
+Let's say you are only interested in Brand A, you could extract it's information with the following query:
+
+>SELECT * FROM ProductInformation WHERE Brand = 'Brand A'
+
+Your output would be:
+|Brand|Price| Rating | SalesTerritory | Sales |
+|:-:|:-:|:-:|:-:|:-:|
+|Brand A| 50.00 | 2.5 | Territory A| 323|
+|Brand A| 50.00 | 5.0 | Territory B| 891|
+|Brand A| 50.00 | 1.0 | Territory C| 104|
+
+Now, let's say you wanted to find the poorest performing region for Brand A, and return a list ranked by lowest sales.
+
+You would query:
+
+>SELECT SalesTerritory, Rating, Sales FROM ProductInformation ORDER BY TotalSales ASC
+
+Your output would be:
+
+|SalesTerritory | Rating | Sales |
+|:-:|:-:|:-:|
+|Territory C|  1.0 | 104|
+|Territory A|  2.5 | 323|
+|Territory B|  5.0 | 891|
+
+You can even engage in data analysis and manipulation using SQL. Reusing the above example, we will generate a report with
+a column called "TotalSales" that sums up the sales throughout each division:
+
+>SELECT SUM(Sales) AS TotalSales FROM ProductInformation
+
+|TotalSales|
+|:-:|
+|6214|
+
