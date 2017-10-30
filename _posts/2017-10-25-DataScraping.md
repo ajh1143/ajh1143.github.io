@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fun with Data Scraping"
+title: "Fun with Web Scraping"
 ---
 
 So, you want to grab data from a website, but there's no API to connect to?
