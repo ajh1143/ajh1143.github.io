@@ -14,7 +14,7 @@ Thankfully, it is a fairly straightforward endeavor, which I've outlined below.
 |(B)Declare your alternative hypothesis (Ha)            |
 |(C)State your assumptions about your dataset           |
 |(D)Set your significance level(alpha α) for your assay |
-|(E)Conduct your experiment                             |
+|(E)Choose your test and Conduct your experiment        |
 |(F)Record observations/results                         |
 |(G)Compute probability of your results                 |
 |(H)Make a decision based on your p-value               |
@@ -58,34 +58,39 @@ Weightloss.csv
 
 `(A)`
 
-Null Hypothesis:
+# Null Hypothesis:
+
 Our null hypothesis is that clinically obese patients following the suggested protocol will not lose 10% of their starting weights.
 
 Ho : Weight Lost != 10%
 
 `(B)`
 
-Alternative Hypothesis:
+# Alternative Hypothesis:
+
 Our alternative hypothesis is that clinically obese patients following the suggested protocol will lose 10% of their starting weights.
 
 Ha : Weight Lost  = 10%
 
-Interpretation Conditions:
+# Interpretation Conditions:
 
 Ho : Mu != 10%
 
 Ha : Mu = 10%
 
 `(C)`
+# Assumptions
 
 We assumed that our data is continuous, that our group is the result of random sampling, 
 that the participants adhered to the protocols of the study, and that our data is based on a normal distribution. 
 
 `(D)`
+# Significance 
 
 An alpha level of 0.05 was selected for this analysis.
 
 `(E)`
+# Test 
 
 Our analysis relies on utilizing the T-Statistic, where:
 
