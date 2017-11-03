@@ -162,7 +162,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-
+  background-color: rgba(255, 127, 80, 0.3);
   @include mobile {
     text-align: center;
   }
