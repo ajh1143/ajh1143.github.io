@@ -162,8 +162,7 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  #background-color: rgba(255, 127, 80, 0.3);
-  width: 100%;
+  background-color: linear-gradient(to right, #CC95C0 , #DBD4B4, #7AA1D2);
   @include mobile {
     text-align: center;
   }
