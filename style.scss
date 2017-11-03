@@ -160,9 +160,9 @@ img {
 }
 
 .masthead {
-  padding: 30px 0;
+  padding: 20px 0;
   border-bottom: 1px solid $lightGray;
-  background: linear-gradient(to right, #CC95C0 , #DBD4B4, #7AA1D2);
+  #background: linear-gradient(to right, #CC95C0 , #DBD4B4, #7AA1D2);
   @include mobile {
     text-align: center;
   }
