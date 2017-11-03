@@ -162,7 +162,6 @@ img {
 .masthead {
   padding: 20px 0;
   border-bottom: 2.5px solid $darkGray;
-  #background: linear-gradient(to right, #CC95C0 , #DBD4B4, #7AA1D2);
   @include mobile {
     text-align: center;
   }
@@ -248,7 +247,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $radial-gradient(red 5%, yellow 15%, green 60%);
+  border-bottom: 1px solid $#F0F0F0;
 }
 
 .posts > .post:last-child {
