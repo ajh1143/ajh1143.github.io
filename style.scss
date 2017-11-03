@@ -248,7 +248,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $darkGray;
+  border-bottom: 1px solid $radial-gradient(red 5%, yellow 15%, green 60%);
 }
 
 .posts > .post:last-child {
