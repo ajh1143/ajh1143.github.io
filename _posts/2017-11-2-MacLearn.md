@@ -132,7 +132,8 @@ max         0.760000     1.005000    29.000000
 ```
 R simplicity in Python is a beautiful thing. 
 
-Summary of code:
+------------------------------------------------------------------------
+# Summary of code:
 ```python
 import pandas as pd
 #set location of data
