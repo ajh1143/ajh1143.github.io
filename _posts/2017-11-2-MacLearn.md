@@ -29,7 +29,7 @@ Set your target location:
 
 `data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data"`
 
-We can look at the dataset directly, and find out the order and column names, which we'll set as /"columns/":
+We can look at the dataset directly, and find out the order and column names, which we'll set as "columns":
 
 `columns = ['Sex','Length','Diameter','Height','WholeWeight', 'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']`
 
