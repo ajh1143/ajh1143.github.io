@@ -48,6 +48,8 @@ We can view the total number of Rows and Columns by using `data.shape`:
 |:----:|
 |(4177, 9)|
 
+4000+ rows over 9 categories! 
+
 ## View Your Data
 We can see what a sample of our dataset looks like by using `data.head(#of rows)`:
 
