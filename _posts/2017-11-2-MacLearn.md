@@ -136,22 +136,23 @@ R simplicity in Python is a beautiful thing.
 # Summary of code:
 ```python
 import pandas as pd
-#set location of data
-data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/
-                                                 abalone/abalone.data"
-#set column titles
-columns = ['Sex','Length','Diameter','Height','WholeWeight',
-           'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']
-#Access data, apply titles
-data = pd.read_csv(data_url, names=columns)
-#find rows and columns
-print(data.shape)
-#check data structure
-print(data.head(3))
-#find missing values
-print(data.isnull().sum())
-#categorize
-print(data.groupby('Sex').size())
-#statistics
-print(data.describe())
+
+def surveyData(data_url, columns)
+   #Access data, apply titles
+   data = pd.read_csv(data_url, names=columns)
+   #find rows and columns
+   print(data.shape)
+   #check data structure
+   print(data.head(3))
+   #find missing values
+   print(data.isnull().sum())
+   #categorize
+   print(data.groupby('Sex').size())
+   #statistics
+   print(data.describe())
+
+data_url = data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data"
+columns = ['Sex','Length','Diameter','Height','WholeWeight', 'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']
+def surveryData(data_url, columns)
+
 ```
