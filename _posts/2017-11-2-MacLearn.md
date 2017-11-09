@@ -23,7 +23,9 @@ We need to import the Pandas package for Python, which we'll import as pd:
 
 Then we need to connect to the data structure, by calling: 
 
-`pd.read_csv(data_url, names = columns)`
+`pd.read_csv(location_of_your_target_data, names = column_names_in_your_dataset)`
+
+Set your target location:
 
 `data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data"`
 
@@ -31,7 +33,7 @@ We can look at the dataset directly, and find out the order and column names, wh
 
 `columns = ['Sex','Length','Diameter','Height','WholeWeight', 'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']`
 
-Now, we can connect to our data with the proper parameters.
+Now, we can connect to our data with the proper parameters using the earlier generic model:
 
 `data = pd.read_csv(data_url, names=columns)`
 
