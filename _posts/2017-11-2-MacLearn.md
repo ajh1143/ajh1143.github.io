@@ -68,7 +68,8 @@ We can see what a sample of our dataset looks like by using `data.head(#of rows)
 We should also check for missing values, too many can cause problems, but we can massage the data by applying an average in place of NA values, if the number missing is low enough, without introducing an extreme error rate
 
 `print(data.isnull().sum())`
-|output|
+
+|output||
 |:--:|:--:|
 |Sex  |  0|
 |Length    |       0|
@@ -89,7 +90,7 @@ We can also bin our categories by Sex(or any other column if it is a categorical
 
 `print(data.groupby('Sex').size())`
 
-|output|
+|output||
 |:--:|:--:|
 |F   | 1307|
 |I   | 1342|
