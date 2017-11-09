@@ -100,3 +100,32 @@ We can also bin our categories by Sex(or any other column if it is a categorical
 |I   | 1342|
 |M    |1528|
 |dtype:| int64|
+
+## Basic Statistical Summary
+You'll probably want to get some quantification of your groups quickly! We can use `.describe()` to yield a simple
+statistical summary of your columns. You'll retreive the count, mean, standard deviation, minimum, maximum, and 25-75% quantiles.
+
+`print(data.describe())`
+
+```
+            Length     Diameter       Height  WholeWeight  ShuckedWeight  \
+count  4177.000000  4177.000000  4177.000000  4177.000000    4177.000000   
+mean      0.523992     0.407881     0.139516     0.828742       0.359367   
+std       0.120093     0.099240     0.041827     0.490389       0.221963   
+min       0.075000     0.055000     0.000000     0.002000       0.001000   
+25%       0.450000     0.350000     0.115000     0.441500       0.186000   
+50%       0.545000     0.425000     0.140000     0.799500       0.336000   
+75%       0.615000     0.480000     0.165000     1.153000       0.502000   
+max       0.815000     0.650000     1.130000     2.825500       1.488000   
+
+       VisceraWeight  ShellWeight        Rings  
+count    4177.000000  4177.000000  4177.000000  
+mean        0.180594     0.238831     9.933684  
+std         0.109614     0.139203     3.224169  
+min         0.000500     0.001500     1.000000  
+25%         0.093500     0.130000     8.000000  
+50%         0.171000     0.234000     9.000000  
+75%         0.253000     0.329000    11.000000  
+max         0.760000     1.005000    29.000000  
+```
+R simplicity in Python is a beautiful thing. 
