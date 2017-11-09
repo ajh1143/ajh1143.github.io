@@ -39,7 +39,7 @@ Done!
 
 Next, we should explore the data more intimately. First, let's find out how many rows and columns we're actually dealing with.
 
-# Rows and Columns
+## Find Rows and Columns
 We can view the total number of Rows and Columns by using `data.shape`:
 
 `print(data.shape)`
@@ -48,7 +48,7 @@ We can view the total number of Rows and Columns by using `data.shape`:
 |:----:|
 |(4177, 9)|
 
-# View Data
+## View Your Data
 We can see what a sample of our dataset looks like by using `data.head(#of rows)`:
 
 `print(data.head(3))`
@@ -66,7 +66,7 @@ Sex  Length  Diameter  Height  WholeWeight  ShuckedWeight  VisceraWeight  \
 ```
 
 
-# Missing Values
+## Assay Missing Values
 We should also check for missing values, too many can cause problems, but we can massage the data by applying an average in place of NA values, if the number missing is low enough, without introducing an extreme error rate
 
 `print(data.isnull().sum())`
@@ -87,7 +87,7 @@ We should also check for missing values, too many can cause problems, but we can
 No values are missing, this is ideal!
 
 
-# bins
+## Set Bins
 We can also bin our categories by Sex(or any other column if it is a categorical type) and see a count for each: 
 
 `print(data.groupby('Sex').size())`
