@@ -52,7 +52,8 @@ We can see what a sample of our dataset looks like by using `data.head(#of rows)
 
 `print(data.head(3))`
 
-``  Sex  Length  Diameter  Height  WholeWeight  ShuckedWeight  VisceraWeight  \
+```  
+Sex  Length  Diameter  Height  WholeWeight  ShuckedWeight  VisceraWeight  \
 0   M   0.455     0.365   0.095       0.5140         0.2245         0.1010   
 1   M   0.350     0.265   0.090       0.2255         0.0995         0.0485   
 2   F   0.530     0.420   0.135       0.6770         0.2565         0.1415   
@@ -60,7 +61,8 @@ We can see what a sample of our dataset looks like by using `data.head(#of rows)
    ShellWeight  Rings  
 0         0.15     15  
 1         0.07      7  
-2         0.21      9  ``
+2         0.21      9  
+```
 
 
 
