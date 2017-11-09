@@ -152,7 +152,8 @@ def surveyData(data_url, columns)
    print(data.describe())
 
 data_url = data_url = "https://archive.ics.uci.edu/ml/machine-learning-databases/abalone/abalone.data"
-columns = ['Sex','Length','Diameter','Height','WholeWeight', 'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']
-def surveryData(data_url, columns)
+columns = ['Sex','Length','Diameter','Height','WholeWeight', 'ShuckedWeight', 'VisceraWeight', 'ShellWeight',
+                                                                                                    'Rings']
+def surveyData(data_url, columns)
 
 ```
