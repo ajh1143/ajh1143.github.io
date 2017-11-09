@@ -71,7 +71,7 @@ We should also check for missing values, too many can cause problems, but we can
 
 `print(data.isnull().sum())`
 
-|output||
+|Category|Missing Values|
 |:--:|:--:|
 |Sex  |  0|
 |Length    |       0|
@@ -92,7 +92,7 @@ We can also bin our categories by Sex(or any other column if it is a categorical
 
 `print(data.groupby('Sex').size())`
 
-|output||
+|Sex|Count|
 |:--:|:--:|
 |F   | 1307|
 |I   | 1342|
