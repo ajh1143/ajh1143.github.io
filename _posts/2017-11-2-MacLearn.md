@@ -139,7 +139,7 @@ First up, we'll produce a histogram of our column groups:
 `import matplotlib as mplt'
 data.hist()
 mplt.show()`
-<img src="/Images/Abalone_hist.png" class="inline"/>
+<img src="/Images/abalone_hist.png" class="inline"/>
 
 Nice to see the distributions, right?
 
