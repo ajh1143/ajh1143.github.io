@@ -90,8 +90,8 @@ Depending on your experience level, at first glance this can look intimidating, 
 In `fileLocation()` I'm simply asking the user to tell me which directory they'd like to output the scraped data to, this is just one way to approach the problem, it could easily be implemented with os.path as well. Once the program is initiated, the user's choice of output location will be where the complete set of text files will be stored.
 
 
-## corelogic()
-`CoreLogic()` is where the bulk of the action occurs. 
+## core_logic()
+`core_logic()` is where the bulk of the action occurs. 
 
 First, we implement `fileLocation()` and save the result of that into the variable 'output'. 
 
