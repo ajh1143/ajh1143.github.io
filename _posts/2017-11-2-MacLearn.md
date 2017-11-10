@@ -157,7 +157,9 @@ data_url = "https://archive.ics.uci.edu/ml/
 #set titles                                                          
 columns = ['Sex','Length','Diameter','Height','WholeWeight', 
            'ShuckedWeight', visceraWeight', 'ShellWeight', 'Rings']
+           
 #pass target and titles to surveyData and run the program                                     
+
 def surveyData(data_url, columns)
 
 ```
