@@ -132,6 +132,8 @@ max         0.760000     1.005000    29.000000
 ```
 R simplicity in Python is a beautiful thing. 
 
+## Visualizing Your Data
+
 We can also produce visualizations of our groups using matplotlib, which we'll import as `mplt`
 
 First up, we'll produce a histogram of our column groups:
