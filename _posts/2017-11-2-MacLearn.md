@@ -132,10 +132,39 @@ max         0.760000     1.005000    29.000000
 ```
 R simplicity in Python is a beautiful thing. 
 
+We can also produce visualizations of our groups using matplotlib, which we'll import as `mplt`
+
+First up, we'll produce a histogram of our column groups:
+
+`import matplotlib as mplt'
+data.hist()
+mplt.show()
+<img src="/Images/Abalone_hist.png" class="inline"/>`
+
+Nice to see the distributions, right?
+
+If you're like me, you want the biggest bang for your code buck. In that case, you'll want to use a feature
+called `scatter_matrix(your_dataset)`
+
+We'll need to invoke pandas again, and form our request as `pd.scatter_matrix(your_dataset)` Hang on, because this
+is where things get fun! We get to spot correlations between our columnar categories.
+
+`#Correlation plots
+scatter_matrix(data)
+mplt.show()
+<img src="/Images/Abalone_scatter.png" class="inline"/>`
+
+Now you can eyeball relationships you might want to pay particular attention to.
+
+In an earlier post we discussed linearity of correlations, we can see some clear linear correlations(that nicely
+fit our intuition as well). You can also observe some non-linear relationships we will explore later. 
+
+
 ------------------------------------------------------------------------
 # Summary of code:
 ```python
 import pandas as pd
+import matplotlib as mplt
 
 def surveyData(data_url, columns)
    #Access data, apply titles
@@ -150,6 +179,12 @@ def surveyData(data_url, columns)
    print(data.groupby('Sex').size())
    #statistics
    print(data.describe())
+   #plotting
+   data.hist()
+   mplt.show()
+   #Correlation plots
+   scatter_matrix(data)
+   mplt.show()
 
 #set target
 data_url = "https://archive.ics.uci.edu/ml/
