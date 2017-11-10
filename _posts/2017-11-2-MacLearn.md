@@ -136,9 +136,11 @@ We can also produce visualizations of our groups using matplotlib, which we'll i
 
 First up, we'll produce a histogram of our column groups:
 
-`import matplotlib as mplt'
+`
+import matplotlib as mplt
 data.hist()
-mplt.show()`
+mplt.show()
+`
 <img src="/Images/abalone_hist.png" class="inline"/>
 
 Nice to see the distributions, right?
@@ -151,9 +153,12 @@ We'll need to invoke pandas again, and form our request as `pd.scatter_matrix(yo
 Hang on, because this is where things get exciting! We get to spot correlations between our columnar categories and 
 see if our hunches have been correct.
 
-`#Correlation plots
+`
+#Correlation plots
 scatter_matrix(data)
-mplt.show()`
+mplt.show()
+`
+
 <img src="/Images/Abalone_scatter.png" class="inline"/>
 
 Now you can eyeball relationships you might want to pay particular attention to.
