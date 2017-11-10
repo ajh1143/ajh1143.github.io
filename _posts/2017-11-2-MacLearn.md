@@ -146,8 +146,10 @@ Nice to see the distributions, right?
 If you're like me, you want the biggest bang for your code buck. In that case, you'll want to use a feature
 called `scatter_matrix(your_dataset)`
 
-We'll need to invoke pandas again, and form our request as `pd.scatter_matrix(your_dataset)` Hang on, because this
-is where things get fun! We get to spot correlations between our columnar categories.
+We'll need to invoke pandas again, and form our request as `pd.scatter_matrix(your_dataset)` 
+
+Hang on, because this is where things get exciting! We get to spot correlations between our columnar categories and 
+see if our hunches have been correct.
 
 `#Correlation plots
 scatter_matrix(data)
@@ -157,7 +159,7 @@ mplt.show()`
 Now you can eyeball relationships you might want to pay particular attention to.
 
 In an earlier post we discussed linearity of correlations, we can see some clear linear correlations(that nicely
-fit our intuition as well). You can also observe some non-linear relationships we will explore later. 
+fit our intuition as well, such as length and diameter). You can also observe some non-linear relationships we will explore later. 
 
 
 ------------------------------------------------------------------------
