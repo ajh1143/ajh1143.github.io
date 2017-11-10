@@ -138,8 +138,11 @@ First up, we'll produce a histogram of our column groups:
 
 
 `import matplotlib as mplt`
+
 `#Histograms`
+
 `data.hist()`
+
 `mplt.show()`
 
 <img src="/Images/abalone_hist.png" class="inline"/>
@@ -155,7 +158,9 @@ Hang on, because this is where things get exciting! We get to spot correlations 
 see if our hunches have been correct.
 
 `#Correlation plots`
+
 `scatter_matrix(data)`
+
 `mplt.show()`
 
 <img src="/Images/Abalone_scatter.png" class="inline"/>
