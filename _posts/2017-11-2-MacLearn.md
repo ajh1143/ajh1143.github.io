@@ -205,6 +205,6 @@ data_url = "https://archive.ics.uci.edu/ml/
 columns = ['Sex','Length','Diameter','Height','WholeWeight', 
            'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']
 #pass target and titles to surveyData and run the program                                     
-def surveyData(data_url, columns)
+surveyData(data_url, columns)
 
 ```
