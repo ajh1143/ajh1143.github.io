@@ -138,8 +138,8 @@ First up, we'll produce a histogram of our column groups:
 
 `import matplotlib as mplt'
 data.hist()
-mplt.show()
-<img src="/Images/Abalone_hist.png" class="inline"/>`
+mplt.show()`
+<img src="/Images/Abalone_hist.png" class="inline"/>
 
 Nice to see the distributions, right?
 
@@ -151,8 +151,8 @@ is where things get fun! We get to spot correlations between our columnar catego
 
 `#Correlation plots
 scatter_matrix(data)
-mplt.show()
-<img src="/Images/Abalone_scatter.png" class="inline"/>`
+mplt.show()`
+<img src="/Images/Abalone_scatter.png" class="inline"/>
 
 Now you can eyeball relationships you might want to pay particular attention to.
 
