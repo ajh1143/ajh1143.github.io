@@ -136,14 +136,12 @@ We can also produce visualizations of our groups using matplotlib, which we'll i
 
 First up, we'll produce a histogram of our column groups:
 
-`
-import matplotlib as mplt
 
-#Histograms
-data.hist()
+`import matplotlib as mplt`
+`#Histograms`
+`data.hist()`
+`mplt.show()`
 
-mplt.show()
-`
 <img src="/Images/abalone_hist.png" class="inline"/>
 
 Nice to see the distributions, right?
@@ -156,13 +154,9 @@ We'll need to invoke pandas again, and form our request as `pd.scatter_matrix(yo
 Hang on, because this is where things get exciting! We get to spot correlations between our columnar categories and 
 see if our hunches have been correct.
 
-`
-#Correlation plots
-
-scatter_matrix(data)
-
-mplt.show()
-`
+`#Correlation plots`
+`scatter_matrix(data)`
+`mplt.show()`
 
 <img src="/Images/Abalone_scatter.png" class="inline"/>
 
@@ -171,6 +165,7 @@ Now you can eyeball relationships you might want to pay particular attention to.
 In an earlier post we discussed linearity of correlations, we can see some clear linear correlations(that nicely
 fit our intuition as well, such as length and diameter). You can also observe some non-linear relationships we will explore later. 
 
+The great thing is, we can pull all of these tests together in a single call, by using the summary script below
 
 ------------------------------------------------------------------------
 # Summary of code:
