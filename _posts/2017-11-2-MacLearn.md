@@ -156,10 +156,8 @@ data_url = "https://archive.ics.uci.edu/ml/
            machine-learning-databases/abalone/abalone.data"
 #set titles                                                          
 columns = ['Sex','Length','Diameter','Height','WholeWeight', 
-           'ShuckedWeight', visceraWeight', 'ShellWeight', 'Rings']
-           
+           'ShuckedWeight', 'VisceraWeight', 'ShellWeight', 'Rings']
 #pass target and titles to surveyData and run the program                                     
-
 def surveyData(data_url, columns)
 
 ```
