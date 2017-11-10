@@ -181,7 +181,7 @@ def surveyData(data_url, columns)
    print(data.groupby('Sex').size())
    #statistics
    print(data.describe())
-   #plotting
+   #Histograms
    data.hist()
    mplt.show()
    #Correlation plots
