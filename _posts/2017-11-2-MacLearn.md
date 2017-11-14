@@ -93,6 +93,36 @@ We should also check for missing values, too many can cause problems, but we can
 No values are missing, this is ideal!
 
 
+## But What If Values ARE Missing?
+
+In this case, you have two choices, A and B.
+
+Choice A is simple, use only the rows with that contain all of the values, called a Complete Case Analysis. Unfortunately,
+depending on the number of missing elements, you sacrifice N and skew even further from good statistics and fundamental research design.
+
+Choice B is a pathway of choices, categorized as Available Case Analysis.
+
+### I. Substitution via Imputation
+
+#### 1. Mean
+` from sklearn.preprocessing import Imputer`
+
+` Imputer(missing_values=0, strategy='mean', axis=0)`
+
+You can engage in simple substition as suggested earlier, through imputation of a mean in place of the null position. Once again, you're introducing an error factor here, but with limited missing values, your impact will be lessened. 
+
+#### 2. Regression 
+
+If you're studying something reasonably well documented, you could substitute values from previous research with similar
+metrics. 
+
+#### 3. Sample Matching
+
+Assuming a large N, you could engage in matching imputation. This is where you'd extract an element of consideration from another sample with similar characteristics, and use its value you're missing in the counter-part.
+
+There are more, but these are the relatively common approaches. 
+
+
 ## Set Bins
 We can also bin our categories by Sex(or any other column if it is a categorical type) and see a count for each: 
 
