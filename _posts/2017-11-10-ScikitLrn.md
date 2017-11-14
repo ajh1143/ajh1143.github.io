@@ -11,26 +11,26 @@ world applications in another series.
 
 Until then, this will serve as a way to get familiar with the tools we can use.
 
-## Loading Data
+# Loading Data
 Before you begin writing any code, you need to understand where your data is coming from.
 
-# Common Data Sources:
+### Common Data Sources:
 CSV
 Text
 Web
 
-# Common Data Forms:
+### Common Data Forms:
 Pandas Dataframes
 NumPy Arrays
 SciPy Matrices
 
-## Train and Test
+# Train and Test
 
 `x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=)`
 
-## Pre-Processing
+# Pre-Processing
 
-# 1. Standardize your data:
+### 1. Standardize your data:
 
 Scale -> transorm train -> transorm  test
 
@@ -40,7 +40,7 @@ Scale -> transorm train -> transorm  test
 
 `.transorm(x_test)`
 
-# 2. Normalize your data:
+### 2. Normalize your data:
 
 Normalize -> transform x_train -> transorm  test
 
@@ -50,13 +50,13 @@ Normalize -> transform x_train -> transorm  test
 
 `.transform(x_test)`
 
-# 3. Binarize your data:
+### 3. Binarize your data:
 
 `Binarizer(threshold= int).fit(x_data)`
 
 `.transform(x_data)`
 
-Missing Data
+# Handling Missing Data
 
 `Imputer(missing_values= int, strategy = 'mean', axis = int)`
 
