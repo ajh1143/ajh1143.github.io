@@ -21,5 +21,5 @@ permalink: /Python/
 |Datasets for analysis:|
 |---------------------|
 |[Kaggle Datasets](https://www.kaggle.com/datasets "Get some data")|
-|[UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php "Get some data"|
+|[UC Irvine Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php "Get some data")|
 |Try to find fun correlations to consider|
