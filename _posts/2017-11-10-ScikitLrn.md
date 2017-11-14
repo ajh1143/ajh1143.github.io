@@ -67,3 +67,39 @@ Normalize -> transform x_train -> transorm  test
 `Imputer(missing_values= int, strategy = 'mean', axis = int)`
 
 `.fit_transform(x_data)`
+
+# Supervised Learning
+
+## Estimators
+
+### KNN: 
+
+`neighbors.KNeighborsClassifier(n_neighbors=5)`
+
+### Linear Regression:
+
+`LinearRegression(normalize=True)`
+
+### Naive Bayes:
+
+`GaussianNB()`
+
+### Support Vector Machines:  
+
+`SVC(kernel='linear')`
+
+## Fitting Models:
+
+`your_lr.fit(X, y)`
+
+`your_knn.fit(X_train, y_train)`
+
+`your_svc.fit(X_train, y_train)`
+
+### Predictors:  
+
+`your_svc.predict(np.random.random((2,5)))`
+
+`your_lr.predict(X_test)`
+
+`your_knn.predict_proba(X_test)`
