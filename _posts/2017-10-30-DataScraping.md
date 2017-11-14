@@ -4,7 +4,7 @@ title: "Fun with Web Scraping"
 ---
 
 So, you want to grab data from a website, but there's no API to connect to?
-<img src="/Images/Scraping.png" height=300 width=150 class="inline"/>
+<img src="/Images/Scraping.png" height=150 width=300 class="inline"/>
 
 What do you do? You get your hands dirty.
 
