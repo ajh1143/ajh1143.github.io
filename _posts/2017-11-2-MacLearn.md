@@ -97,7 +97,7 @@ No values are missing, this is ideal!
 
 In this case, you have two choices, A and B.
 
-Choice A is simple, use only the rows with that contain all of the values, called a Complete Case Analysis. Unfortunately,
+Choice A is simple, use only the rows which contain complete datasets, called a Complete Case Analysis. Unfortunately,
 depending on the number of missing elements, you sacrifice N and skew even further from good statistics and fundamental research design.
 
 Choice B is a pathway of choices, categorized as Available Case Analysis.
