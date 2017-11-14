@@ -2,10 +2,13 @@
 layout: post
 title: "Fun with Web Scraping"
 ---
-So, you want to grab data from a website, but there's no API to connect to?
-<img src="/Images/Scraping.jpg" class="block"/>
 
-What do you do? You get your hands dirty.
+<img src="/Images/Scraping.jpg" class="block"/><br>
+So, you want to grab data from a website, but there's no API to connect to?
+
+What do you do? 
+
+You get your hands dirty.
 
 One solution is to utilize a scripting language to engage in manual data scraping.
 
