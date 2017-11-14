@@ -15,13 +15,19 @@ Until then, this will serve as a way to get familiar with the tools we can use.
 Before you begin writing any code, you need to understand where your data is coming from.
 
 ### Common Data Sources:
+
 CSV
+
 Text
+
 Web
 
 ### Common Data Forms:
+
 Pandas Dataframes
+
 NumPy Arrays
+
 SciPy Matrices
 
 # Train and Test
