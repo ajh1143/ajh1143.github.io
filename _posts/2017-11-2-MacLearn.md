@@ -3,8 +3,9 @@ layout: post
 title: Machine Learning 101 - Part 1
 ---
 
-It's hot, it's trendy, it's powerful. Let's dive in together using Python. 
 <img src="/Images/Machine-Learning.jpg" class="inline"/>
+
+It's hot, it's trendy, it's powerful. Let's dive in together using Python. 
 
 So, you have a set of data you want to explore. In our case, we're going to use an example dataset from the UCI Machine Learning
 Repository. In particular, we're going to explore Abalone data from: 
