@@ -2,7 +2,7 @@
 layout: post
 title: Hypothesis Testing - A Primer
 ---
-
+<img src="/Images/hypothesis.jpg" class="inline"/><br>
 Hypothesis testing is a powerful methodology for scientists and analysts alike. 
 
 Thankfully, it is a fairly straightforward endeavor, which I've outlined below. 
