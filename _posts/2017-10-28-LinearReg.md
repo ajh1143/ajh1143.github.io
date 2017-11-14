@@ -2,7 +2,7 @@
 layout: post
 title: Linear Regression Analysis - Part 1
 ---
-
+<img src="/Images/regression.jpg" class="inline"/><br>
 Let's talk about correlation.
 
 General correlation is the quantification of a relationship between variables, most commonly represented as X & Y.
