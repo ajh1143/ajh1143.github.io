@@ -12,6 +12,9 @@ relationships in the data you're not going to divine by intuition alone. You'll 
 
 One way to do this is to engage in Exploratory Data Analysis (EDA)
 
+
+# Exploratory Data Analysis 
+
 EDA allows us to do exactly as I stated prior, peek into the layers of information and find 
 relationships, regardless of your intuition or knowledge. Best of all, you can do this 
 visually with relative ease. In a previous post 'Machine learning 101' we utilized the 
@@ -32,6 +35,9 @@ For example, let's say you were working exclusively with categorical data, which
 results in a binary set of choices. Yes/no, with/without, higher/lower etc. Here, you'd 
 want to utilize something like countplot() from the Seaborn package to follow your EDA 
 investigative thread rather than the scatter_matrix() approach.
+
+ex. `countplot(x=None, y=None, hue=None, data=None, order=None, hue_order=None, orient=None, color=None, palette=None, saturation=0.75, dodge=True, ax=None, **kwargs)`
+Shows the counts of observations in each categorical bin using bars. 
 
 Other times, you'll be working with continuous data, and you may just want to look for outliers or compare means, plot histograms, 
 probabilities, box plots, and standard deviations.
