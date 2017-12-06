@@ -1,0 +1,41 @@
+---
+layout: post
+title: Exploratory Data Analysis
+---
+<img src="/Images/EDA_Cave.jpg" class="block"/><br>
+DO YOUR HOMEWORK!
+
+As a data scientist, you should approach your discipline with a strong basis rooted in hard science. One of 
+your primary goals, is to keep an open mind. Follow the data even if it doesn't match your 
+intuition. Sometimes your intuition is a great asset! But, odds are, there are patterns and 
+relationships in the data you're not going to divine by intuition alone. You'll need some help.
+
+One way to do this is to engage in Exploratory Data Analysis (EDA)
+
+EDA allows us to do exactly as I stated prior, peek into the layers of information and find 
+relationships, regardless of your intuition or knowledge. Best of all, you can do this 
+visually with relative ease. In a previous post 'Machine learning 101' we utilized the 
+scatter_matrix(). This will be a frequently used tool in your career to spot relationships 
+between independent and dependant variables. But there are other options as well, and 
+you'll want to pick one that fits your dataset.
+
+EDA isn't just useful for predictive opportunities, it's also a fundamental step in understanding your data.
+We've already utilized the approach, for example, when parsing our data to look for missing or null values, 
+view total entries, assay data types. You use EDA to understand your data.
+
+The primary groups of EDA include: Univariate, multivariate, non-graphical, and graphical.
+
+You'll also want to consider whether your data/question include qualitative, 
+quantitative, categorical, and continuous features when developing your analytical approach. 
+
+For example, let's say you were working exclusively with categorical data, which 
+results in a binary set of choices. Yes/no, with/without, higher/lower etc. Here, you'd 
+want to utilize something like countplot() from the Seaborn package to follow your EDA 
+investigative thread rather than the scatter_matrix() approach.
+
+Other times, you'll be working with continuous data, and you may just want to look for outliers or compare means, plot histograms, 
+probabilities, box plots, and standard deviations.
+
+For the most part, EDA is a simple procedure that yields tremendous value in both information, and in time efficiency.
+
+So, again, DO YOUR HOMEWORK!
