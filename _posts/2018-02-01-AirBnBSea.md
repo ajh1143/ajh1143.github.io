@@ -6,36 +6,55 @@ title: Seattle AirBnB Analysis
 <img src="/Images/airbnbsea.jpg" class="inline"/><br>
 Where to rent, and where to avoid, if you'll be visiting Seattle. 
 
-
+## Merging Multiple CSV Files into A Single File
 ```Python
+
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
 #IMPORT FILES
 #SET DIRECTORY TARGET
-#dir = 'C:/Users/Andrew/Desktop/bitc1/s3_files/seattle/'
+dir = 'C:/Users/Andrew/Desktop/bitc1/s3_files/seattle/'
 #SET FILES ALGORITHM
-#files = filter(lambda x: x.endswith('.csv'), os.listdir(dir))
+files = filter(lambda x: x.endswith('.csv'), os.listdir(dir))
 #MERGE EACH FILE WITH CONCAT
-#for file in files:
-#    raw = pd.read_csv(dir+file)
-#    df = pd.DataFrame(raw)
-#    merged = pd.concat([df])
+for file in files:
+    raw = pd.read_csv(dir+file)
+    df = pd.DataFrame(raw)
+    merged = pd.concat([df])
 #SAVE OUTPUT FILE
-#merged.to_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_final.csv')
+merged.to_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_final.csv')
+
+```
+
+## Viewing the merged file
+
+```Python
+
 #OPEN AND READ MERGED FILE
 df = pd.read_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_final.csv')
-#df.info()
+
+```
+## Neighborhood Ratings
+
+#### Extracting Relevant Columns
+
+```Python
+
 #EXTRACT SATISFACTION RATING AND NEIGHBORHOOD
 df2 = df[['overall_satisfaction', 'neighborhood']]
 #MAKE LIST OF NEIGHBORHOOD NAMES
 names = df2['neighborhood'].unique()
 #PIVOT DATAFRAME
 df3 = df2.pivot(columns='neighborhood', values='overall_satisfaction')
+
 ```
 
+#### Creating A New DataFrame
+
 ```Python
+
 #CREATE NEW DF WITH HOOD, Sample, Average Rating
 name_list = []
 mean_list = []
@@ -51,10 +70,15 @@ for each in names:
 raw_data = {    'Neighborhood' : name_list,
                 'Sample_Size': count_list,
                 'Average_Rating': mean_list}
+
+df4 = pd.DataFrame(raw_data, columns = ['Neighborhood', 'Sample_Size', 'Average_Rating'])
+
 ```
 
+#### Plotting The Top 5 Best, and Top 5 Worst Neighborhoods By Average Review 
+
 ```Python
-df4 = pd.DataFrame(raw_data, columns = ['Neighborhood', 'Sample_Size', 'Average_Rating'])
+
 sort_test = df4.sort_values('Average_Rating', ascending=[0])
 x = sort_test.head(5)
 x1 = sort_test.tail(5)
@@ -69,6 +93,9 @@ ax2.set_ylabel("")
 ax2.set_xlabel("")
 plt.tight_layout()
 plt.show()
+
 ```
+# Neighborhood Rankings
+
 <img src="/Images/airbnbtop5.png" class="inline"/><br>
 
