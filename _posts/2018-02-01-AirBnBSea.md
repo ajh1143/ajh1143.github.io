@@ -39,7 +39,7 @@ merged.to_csv('C://Users//Andrew//Desktop//seattle//merged_final.csv')
 
 Great! We've compiled all of our data into a single (but long) file and preserved the original csv structure.
 
-I manually looked at the file and noticed two columns I was personally interested in, `Neightborhood` and `Overall_Satisfaction`. The neighborhood is where the AirBnB rental is located in the city, and the Overall_Satisfaction is a 
+I manually looked at the file and noticed two columns I was personally interested in, `Neighborhood` and `Overall_Satisfaction`. The neighborhood is where the AirBnB rental is located in the city, and the Overall_Satisfaction is a 
 user rating of their satisfaction with the rental.
 
 The workflow we're going to pursue will be to extract these two columns, and create a new DataFrame for analysis
@@ -78,7 +78,7 @@ Cool! Let's continue.
 
 We're going to create another Pandas DataFrame, but this time we're going to manually create it using our previous data and light analysis. 
 
-This new DataFrame will consist of 3 columns, `Neightborhood`, `Sample_Size`, and `Average_Rating`. As you can see, `Sample_Size` is new, and we're going to create it by counting the number of recorded ratings left by users of the service so we can assay an informal level of trust in the ratings. Obviously a very high or low rating would be suspicious if we're dealing with a handful or fewer reviews, it might be disgruntled customers or AirBnB hosts leaving themselves positive scores. Personally, I think a minimum of 50 reviews would be a good cutoff for a neighborhood, but we'll deal with that later. 
+This new DataFrame will consist of 3 columns, `Neighborhood`, `Sample_Size`, and `Average_Rating`. As you can see, `Sample_Size` is new, and we're going to create it by counting the number of recorded ratings left by users of the service so we can assay an informal level of trust in the ratings. Obviously a very high or low rating would be suspicious if we're dealing with a handful or fewer reviews, it might be disgruntled customers or AirBnB hosts leaving themselves positive scores. Personally, I think a minimum of 50 reviews would be a good cutoff for a neighborhood, but we'll deal with that later. 
 
 We're also going to generate an Average rating for each neighborhood, by using `.mean()` on each neighborhood column and returning the score. 
 
