@@ -28,7 +28,7 @@ merged.to_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_fina
 
 ```
 
-## Viewing the merged file
+#### Viewing the merged file
 
 ```Python
 
@@ -36,7 +36,7 @@ merged.to_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_fina
 df = pd.read_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_final.csv')
 
 ```
-## Neighborhood Ratings
+# Neighborhood Ratings
 
 #### Extracting Relevant Columns
 
@@ -95,7 +95,7 @@ plt.tight_layout()
 plt.show()
 
 ```
-# Neighborhood Rankings
+## Neighborhood Results
 
 <img src="/Images/airbnbtop5.png" class="inline"/><br>
 
