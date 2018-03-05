@@ -307,4 +307,37 @@ print("T-Value: " + str(t_val))
 print("P-Value: " + str(p_val))
 
 ```
+## Plotting Results Pt. 2
 
+```Python
+
+#Plot Distributions
+
+#DataFrame Creation
+df_high = pd.DataFrame(higher_means)
+df_lower = pd.DataFrame(lower_means)
+
+#Plot fig, axes 
+fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(7, 8))
+#Apply global title
+fig.suptitle("Price Distributions of Top 5 Highest and Lowest Rated AirBnB Neighborhoods")
+#Define first plot
+ax = df_high.plot.box(color = "green", ax = axes[0], legend = False)
+ax.set_ylabel("Price \n(USD)")
+ax.set_xlabel("Higher Rated")
+#Define second plot
+ax2 = df_lower.plot.box(color = "red", ax = axes[1], legend = False)
+ax2.set_xlabel("Lower Rated")
+#Set y-axes equal for each plot
+ax.set_ylim(100, 215)
+ax2.set_ylim(100, 215)
+#Apply grids to both plots
+plt.grid()
+plt.grid()
+#Tight and Show
+plt.tight_layout()
+plt.show()
+
+```
+
+<INSERT IMAGE Boxplot>
