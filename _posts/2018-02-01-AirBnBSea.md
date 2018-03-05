@@ -234,6 +234,13 @@ high_reviews = high_reviews.dropna(how='any',axis=0)
 #Check length of good data
 print(len(high_reviews))
 
+```
+Output: 162
+
+There are 162 complete records
+
+```Python
+
 #Extract Neighborhood B Price Data
 #westlake = df3[['Westlake', 'Pike-Market', 'Sunset Hill', 'Westlake', 'Briarcliff', 'Industrial District']]
 low_reviews = pd.concat([df3['Westlake'], df3['Pike-Market'], df3['Sunset Hill'], df3['Westlake'], df3['Briarcliff'],
@@ -246,13 +253,17 @@ low_reviews = low_reviews.dropna(how='any',axis=0)
 print(len(low_reviews))
 
 ```
+Output: 267
+
+There are 267 complete records
+
 So, we've pivoted or dataset, extracted our targets, combined them into two larger datasets, and dropped missing observations. This means we've defined our populations, but now we have another problem.
 
-Our distributions have different sample sizes. What can we do?
+Our distributions have different sample sizes, Group A has 162 and Group B has 267. What can we do?
 
-We could proceed and just take the global average per group, that would be easy and quick. 
+We could proceed and just take the global average per group, that would be easy and quick(and most likely quite appropriate for our situation) 
 
-Or, we could constrain our tests to random samples from each from a grouping or equal population (N) sizes. 
+Or, if this was a more complicated scenario, we could constrain our tests to random samples from each from a grouping or equal population (N) sizes. 
 
 #### We'll do both!
 
@@ -272,6 +283,16 @@ print("Difference in Means from full dataset = $" + str(abs(total_mean_high_tota
 print(ttest_ind(low_reviews, high_reviews))
 
 ```
+Output:
+135.030864198
+184.0
+Difference in Means from full dataset = $48.9691358025
+Ttest_indResult(statistic=4.2791130085241482, pvalue=2.3182398725692023e-05)
+
+Group A: Average Price = $135
+Group B: Average Price = $184
+T-Statistic: 4.279
+P-Value: 0.00002318
 
 ## Random Sampling Method:
 
@@ -307,6 +328,19 @@ print("T-Value: " + str(t_val))
 print("P-Value: " + str(p_val))
 
 ```
+Output:
+Group A: 134.980933333
+Group B: 183.514733333
+Difference in Means = $48.5338
+Average T and P Values over 100 random samples of 100 runs: 
+T-Value: 3.74886876898
+P-Value: 0.000569950860971
+
+In both cases, the systemic analysis and the randomly sampled version, we arrived the same conclusion. We rejected our null
+hypothesis. There is a statistically significant difference in the prices of the top 5 best, and top 5 worst lowest neighborhoods.
+
+There's another interesting result that's best presented by a simple graph, outlined below:
+
 ## Plotting Results Pt. 2
 
 ```Python
@@ -340,4 +374,8 @@ plt.show()
 
 ```
 
-<INSERT IMAGE Boxplot>
+<<img src="/Images/price_dist_airbnb.png" class="inline"/><br>>
+
+The real story here, is that the more expensive neighborhoods are also gaining lower reviews from customers.
+
+There's some food for thought the next time you go to set your price point.
