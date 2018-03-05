@@ -156,3 +156,104 @@ plt.show()
 
 <img src="/Images/airbnbtop5.png" class="inline"/><br>
 
+Looking at our plot, there doesn't seem to be an overly exaggerated difference in highest to lowest aggregate neighborhoods.
+
+This is expected, as we're looking at an average of many rentals. 
+
+## Average Price Per Neighborhood - T-Test Experiment
+
+Let's continue our analysis, by diving into another consideration.
+
+What if we took the top 5 highest and lowest reviewed rental areas, and looked at the average price? Are more expensive
+rentals high reviewed? I think this is an interesting question, so let's probe the data.
+
+I already know the outline of our procedure, so let's first import the libraries we'll need
+
+```Python
+
+import pandas as pd
+from scipy.stats import ttest_ind
+import numpy as np
+import matplotlib.pyplot as plt
+
+```
+
+Let's get started by once again accessing the same merged dataset we created earlier.
+
+```Python
+
+#Open File
+df = pd.read_csv('C://Users//Andrew//Desktop//bitc1//s3_files//seattle//merged_final.csv')
+
+```
+Now, let's extract our relevant columns, Price and Neighborhood.
+
+```Python
+
+#Extract Columns
+price =  df.price[:]
+neighborhood = df.neighborhood[:]
+#satisfaction = df.overall_satisfaction[:]
+df2 = pd.DataFrame()
+df2['Neighborhood'] = neighborhood
+df2['Price'] = price
+
+#Save list of neighborhood names
+names = df2['Neighborhood'].unique()
+
+```
+
+We've created our intermediate dataframe, called `df2` which contains our targets. Now, we'll want to pivot our dataset so our
+observations are sorted in a way that's easier to access our observations by neighborhoods.
+
+```Python
+
+#PIVOT DATAFRAME
+df3 = df2.pivot(columns='Neighborhood', values='Price')
+
+```
+This pivot strategy will allow us to transform an observation into multiple columnar categories. 
+
+Next, we want to slice our particular areas of interest, which we identified with our earlier analysis. We'll grab the data associated with the top and bottom neighborhoods as follows. But first, we need to think about the situation. We're dealing with
+unequal populations and a lot of potential null values due to the distribution of our rows/values and overall data structure.
+
+We need to collect our data, and the approach I took was to combine the disparate columns into one long column. This will form the basis of our overall Group categories, Group A and Group B, reflecting the highest and lowest ranked areas. 
+
+We'll also want to utilize our `.dropna()` method to throw out the missing observations.
+
+```Python
+
+#Extract Neighborhood A Price Data
+#whittier = df3[['Whittier Heights', 'Portage Bay', 'North Delridge', 'Interbay', 'Crown Hill']]
+high_reviews = pd.concat([df3['Whittier Heights'], df3['Portage Bay'], df3['North Delridge'], df3['Interbay'], df3['Crown     
+                         Hill']], axis=0)
+                         
+#Drop Null observations
+high_reviews = high_reviews.dropna(how='any',axis=0)
+
+#Check length of good data
+print(len(high_reviews))
+
+#Extract Neighborhood B Price Data
+#westlake = df3[['Westlake', 'Pike-Market', 'Sunset Hill', 'Westlake', 'Briarcliff', 'Industrial District']]
+low_reviews = pd.concat([df3['Westlake'], df3['Pike-Market'], df3['Sunset Hill'], df3['Westlake'], df3['Briarcliff'],
+                        df3['Industrial District']], axis=0)
+                        
+#Drop Null observations
+low_reviews = low_reviews.dropna(how='any',axis=0)
+
+#Check length of good data
+print(len(low_reviews))
+
+```
+So, we've pivoted or dataset, extracted our targets, combined them into two larger datasets, and dropped missing observations. This means we've defined our populations, but now we have another problem.
+
+Our distributions have different sample sizes. What can we do?
+
+We could proceed and just take the global average per group, that would be easy and quick. 
+
+Or, we could constrain our tests to random samples from each from a grouping or equal population (N) sizes. 
+
+#### We'll do both!
+
+
