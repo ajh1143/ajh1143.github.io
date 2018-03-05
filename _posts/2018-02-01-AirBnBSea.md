@@ -284,14 +284,21 @@ print(ttest_ind(low_reviews, high_reviews))
 
 ```
 Output:
+
 135.030864198
+
 184.0
+
 Difference in Means from full dataset = $48.9691358025
+
 Ttest_indResult(statistic=4.2791130085241482, pvalue=2.3182398725692023e-05)
 
 Group A: Average Price = $135
+
 Group B: Average Price = $184
+
 T-Statistic: 4.279
+
 P-Value: 0.00002318
 
 ## Random Sampling Method:
@@ -329,12 +336,20 @@ print("P-Value: " + str(p_val))
 
 ```
 Output:
+
 Group A: 134.980933333
+
 Group B: 183.514733333
+
 Difference in Means = $48.5338
+
 Average T and P Values over 100 random samples of 100 runs: 
+
 T-Value: 3.74886876898
+
 P-Value: 0.000569950860971
+
+### Conclusion
 
 In both cases, the systemic analysis and the randomly sampled version, we arrived the same conclusion. We rejected our null
 hypothesis. There is a statistically significant difference in the prices of the top 5 best, and top 5 worst lowest neighborhoods.
