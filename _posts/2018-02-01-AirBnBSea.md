@@ -256,4 +256,55 @@ Or, we could constrain our tests to random samples from each from a grouping or 
 
 #### We'll do both!
 
+# T-Test (Independent Groups)
+
+## Unequal population:
+
+```Python
+
+#Extract mean of means, find mean difference in price
+total_mean_high_total = np.mean(high_reviews)
+total_mean_low_total = np.mean(low_reviews)
+print(str(total_mean_high_total))
+print(str(total_mean_low_total))
+#Calculate the difference in means
+print("Difference in Means from full dataset = $" + str(abs(total_mean_high_total - total_mean_low_total)))
+print(ttest_ind(low_reviews, high_reviews))
+
+```
+
+## Random Sampling Method:
+
+```Python
+
+t_list = []
+p_list = []
+higher_means = []
+lower_means = []
+for each in range(count):
+    sample_high = high_reviews.sample(n=150)
+    sample_low = low_reviews.sample(n=150)
+    higher_means.append(np.mean(sample_high))
+    lower_means.append(np.mean(sample_low))
+    t,p= ttest_ind(sample_low, sample_high)
+    t_list.append(t)
+    p_list.append(p)
+t_val = np.mean(t_list)
+p_val = np.mean(p_list)
+total_mean_high = np.mean(higher_means)
+total_mean_low = np.mean(lower_means)
+
+#Extract mean of means, find mean difference in price
+print(str(total_mean_high))
+print(str(total_mean_low))
+
+#Calculate the difference in means
+print("Difference in Means = $" + str(abs(total_mean_high - total_mean_low)))
+
+#Print T and P
+print("Average T and P Values over " + str(count) + " runs: ")
+print("T-Value: " + str(t_val))
+print("P-Value: " + str(p_val))
+
+```
 
