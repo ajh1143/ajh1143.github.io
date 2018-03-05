@@ -389,7 +389,7 @@ plt.show()
 
 ```
 
-<<img src="/Images/price_dist_airbnb.png" class="inline"/><br>>
+<img src="/Images/price_dist_airbnb.png" class="inline"/><br>
 
 The real story here, is that the more expensive neighborhoods are also gaining lower reviews from customers.
 
