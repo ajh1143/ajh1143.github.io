@@ -50,7 +50,7 @@ Great! So, let's start our investigation.
 df.version.unique()
 
 ```
-> EDA OUTPUT:
+EDA OUTPUT:
 
 ```
 
@@ -60,10 +60,6 @@ df.version.unique()
 2     377  gate_40             165         True        False
 3     483  gate_40               1        False        False
 4     488  gate_40             179         True         True
-
-```
-
-```
 
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 90189 entries, 0 to 90188
@@ -75,7 +71,6 @@ retention_1       90189 non-null bool
 retention_7       90189 non-null bool
 dtypes: bool(2), int64(2), object(1)
 memory usage: 2.2+ MB
-
 
 userid	sum_gamerounds
 count	9.018900e+04	90189.000000
@@ -90,7 +85,7 @@ max	9.999861e+06	49854.000000
 array(['gate_30', 'gate_40'], dtype=object)
 
 ```
-> Summary:
+Output Summary:
 
 It appears that we have 90,189 rows populated over 5 columns, and no missing data! Perfect.
 
@@ -108,7 +103,7 @@ are recorded as `gate_30` and `gate_40`.
 These two versions allow us a fine entry point to AB testing.
 
 
-### A-B Groups
+###  AB Groups
 
 Let's first define the population sizes we're dealing with to make sure we can proceed with a statistically sound comparison.
 
@@ -121,9 +116,9 @@ print(A)
 print(B)
 
 ```
-> Output:
+Output:
 
-```Python
+```
 
 version
 False    45489
@@ -140,7 +135,6 @@ Of our 90,189 total records, approximately half are using version gate_30 (which
 are using version gate_40 (which we will call version B). 
 
 This is great, we can proceed with the analysis.
-
 
 ```Python
 
@@ -196,6 +190,8 @@ oneday = df.retention_1.sum()/df.retention_1.count()
 print(str(oneday*100)+"%")
 
 ```
+Output:
+
 44.52% Return the day following an installation of the product.
 
 ```Python
@@ -205,6 +201,7 @@ oneday = df.retention_1.groupby(df.version).sum()/df.retention_1.groupby(df.vers
 print(oneday)
 
 ```
+Output:
 
 gate_30    44.818792
 
