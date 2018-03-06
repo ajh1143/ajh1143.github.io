@@ -53,7 +53,7 @@ df.version.unique()
 ```
 EDA OUTPUT:
 
-`
+```
 
    userid  version  sum_gamerounds  retention_1  retention_7
 0     116  gate_30               3        False        False
@@ -85,7 +85,7 @@ max	9.999861e+06	49854.000000
 
 array(['gate_30', 'gate_40'], dtype=object)
 
-`
+```
 #### Output Summary:
 
 It appears that we have 90,189 rows populated over 5 columns, and no missing data! Perfect.
