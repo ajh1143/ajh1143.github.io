@@ -250,7 +250,15 @@ gate_30    44.818792
 
 gate_40    44.228275
 
-It looks like regardless of version, next day returns are essentially the same between our experimental groups.
+It looks like regardless of version, next day returns are essentially the same between our experimental groups. 
+
+But, there IS that 0.6% loss in return players randomized to the 40 round gate...could it be significant? Maybe this product will see millions of users and that extra 0.6% could translate into some paying customers and/or ad dollars. 
+
+It's worth investigating.
+
+We can use `Bootstrapping` to test our confidence. Bootstrapping is used in many disciplines, such as in molecular
+biology to help the analysis of phylogenetics, to re-sample and replace data to and test our statistical confidence in our 
+results. 
 
 # Bootstrapping Means - Sampling
 
@@ -271,6 +279,9 @@ boot_1d.plot.kde()
 
 ```
 
+<img src="/Images/AB_Folder/AB_kde1.png" class="inline"/><br>
+
+
 # Calculating AB Group Percent Differences For A New Column, and Plotting 
 
 ```Python
@@ -283,7 +294,7 @@ ax = boot_1d['difference'].plot.kde()
 
 ```
 
-<INSERT IMAGE>
+<img src="/Images/AB_Folder/AB_kde2.png" class="inline"/><br>
 
 # Calculating the probability that 1-day retention is greater when the gate is at level 30
 
@@ -293,6 +304,9 @@ prob = (boot_1d['diff'] > 0).sum() / len(boot_1d['diff'])
 print(str(prob*100)+"%")
 
 ```
+#### Output:
+
+96.26%
 
 # Calculating 7-day retention for both AB-groups
 
@@ -302,6 +316,9 @@ sevenday = df.retention_7.sum()/df.retention_7.count()
 print(sevenday)
 
 ```
+#### Output:
+
+0.186064819435
 
 # Creating a list with bootstrapped means for each AB-group
 
@@ -334,4 +351,4 @@ print(prob)
 
 ```
 
-<INSERT IMAGE>
+<img src="/Images/AB_Folder/AB_kde3.png" class="inline"/><br>
