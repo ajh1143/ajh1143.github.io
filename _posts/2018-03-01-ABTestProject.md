@@ -191,11 +191,12 @@ plt.grid(True)
 
 ```Python
 
-# The % of users that came back the day after they installed
+# Calculate percent of returning users - next day
 oneday = df.retention_1.sum()/df.retention_1.count()
-print(oneday)
+print(str(oneday*100)+"%")
 
 ```
+44.52% Return the day following an installation of the product.
 
 ```Python
 
@@ -204,6 +205,14 @@ oneday = df.retention_1.groupby(df.version).sum()/df.retention_1.groupby(df.vers
 print(oneday)
 
 ```
+
+gate_30    44.818792
+
+gate_40    44.228275
+
+It looks like regardless of version, next day returns are the same between groups.
+
+# Bootstrapping Means - Sampling
 
 ```Python
 
@@ -222,15 +231,18 @@ boot_1d.plot.kde()
 
 ```
 
+# Calculating AB Group Percent Differences For A New Column, and Plotting 
+
 ```Python
 
-# Adding a column with the % difference between the two AB-groups
-boot_1d['diff'] = (boot_1d['gate_30'] - boot_1d['gate_40']) /  boot_1d['gate_40'] * 100
+# Populate a new % Difference Column
+boot_1d['difference'] = (boot_1d['gate_30'] - boot_1d['gate_40']) /  boot_1d['gate_40'] * 100
 
-# Ploting the bootstrap % difference
-ax = boot_1d['diff'].plot.kde()
+# Plot the new Column
+ax = boot_1d['difference'].plot.kde()
 
 ```
+<INSERT IMAGE>
 
 ```Python
 
