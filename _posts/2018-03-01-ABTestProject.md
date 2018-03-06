@@ -185,7 +185,7 @@ plt.grid(True)
 
 ```
 
-<img src="/Images/AB_Folder/Total_AB.jpg" class="inline"/><br>
+<img src="/Images/AB_Folder/Total_AB.png" class="inline"/><br>
 
 
 ```Python
