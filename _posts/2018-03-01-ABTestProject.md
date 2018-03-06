@@ -15,6 +15,7 @@ while adding our own twists and approaches as we proceed.
 Let's begin by importing our libraries and data, and seeing what we have to work with!
 
 ### IMPORT LIBRARIES
+
 ```Python
 
 # Importing pandas
@@ -25,7 +26,7 @@ import matplotlib.pyplot as plt
 
 Now the data...
 
-### READ DATA
+## READ DATA
 
 ```Python
 # Reading in the data
@@ -33,7 +34,7 @@ df = pd.read_csv("datasets/cookie_cats.csv")
 ```
 Great! So, let's start our investigation.
 
-### EDA
+## EDA
 
 ```Python
 
@@ -52,7 +53,7 @@ df.version.unique()
 ```
 EDA OUTPUT:
 
-```
+`
 
    userid  version  sum_gamerounds  retention_1  retention_7
 0     116  gate_30               3        False        False
@@ -84,8 +85,8 @@ max	9.999861e+06	49854.000000
 
 array(['gate_30', 'gate_40'], dtype=object)
 
-```
-Output Summary:
+`
+#### Output Summary:
 
 It appears that we have 90,189 rows populated over 5 columns, and no missing data! Perfect.
 
@@ -103,7 +104,7 @@ are recorded as `gate_30` and `gate_40`.
 These two versions allow us a fine entry point to AB testing.
 
 
-###  AB Groups
+### Sample Size
 
 Let's first define the population sizes we're dealing with to make sure we can proceed with a statistically sound comparison.
 
@@ -116,10 +117,9 @@ print(A)
 print(B)
 
 ```
-Output:
+#### Output:
 
-```
-
+`
 version
 False    45489
 True     44700
@@ -129,12 +129,21 @@ version
 False    44700
 True     45489
 Name: version, dtype: int64
+`
 
-```
 Of our 90,189 total records, approximately half are using version gate_30 (which we will call Group A) and the other half
 are using version gate_40 (which we will call version B). 
 
 This is great, we can proceed with the analysis.
+
+### How Much Do They Play?
+
+We want to see how many how long players typically stay with a product. One way to measure the metric in this case, is
+to examine how many rounds each user plays.
+
+Since we're using a Pandas DataFrame, we can take the following approach. We'll use `.groupby()` to set each user's experience
+to a bin, and return a total count. We'll then plot how many players are active within a set range, showing us the counts of
+players within the 0-100 range of total rounds played. 
 
 ```Python
 
@@ -150,8 +159,20 @@ ax.set_ylabel("userid")
 
 <img src="/Images/AB_Folder/total_played.png" class="inline"/><br>
 
+#### Conclusion:
+
+It appears that the vast majority of users are playing less than 20 rounds in total, over the recording of this data. 
+
+Let's take the same approach to see if there is much of a difference in the number of games played in our AB versions allotted to each user. 
 
 # Group Distributions: A vs B Total Plays
+
+### Set-Up
+
+This time, we'll need to massage the data a bit more. We're also going to switch to an overlayed bar-plot of the distinct AB
+group distributions.
+
+Since we've already identified that the drop off in users occurs in less than 20 sessions, let's also change our bin distribution to get a more nuanced view of the low end and high end of user activities.
 
 ```Python
 
@@ -165,6 +186,14 @@ Group_B = df[df.version == 'gate_40']
 bins = [0,1,10,20,30,40,50,60,70,80,90,100,200,500]
 plot_GA = pd.DataFrame(Group_A.groupby(pd.cut(Group_A["sum_gamerounds"], bins=bins)).count())
 plot_GB = pd.DataFrame(Group_B.groupby(pd.cut(Group_B["sum_gamerounds"], bins=bins)).count())
+
+```
+### Plot It!
+
+Remember, we're going to overlay our graphs, so take particular notice of one approach that works
+for our example, where we assign the second graph the parameter `ax=ax` to allow the overlay of the second distribution.
+
+```Python
 
 # Plotting the distribution of players that played 0 to 100 game rounds
 ax = plot_GA[:50].plot(kind = 'bar', y="userid", color = "black", alpha = 1, 
@@ -182,6 +211,14 @@ plt.grid(True)
 
 <img src="/Images/AB_Folder/Total_AB.png" class="inline"/><br>
 
+There doesn't seem to be a large difference between the two versions overall. However, there does seem to be some slight
+disparities around the 30-40 marks that may be related to the AB test at hand. 
+
+## Please Come Back
+
+Another metric we can use to guage the success of the product, is in the capture of returning users. If our revenue model is 
+based on users, we don't want them to give up on us early. Let's look at how many players come back the day after installing
+the game.
 
 ```Python
 
@@ -190,9 +227,14 @@ oneday = df.retention_1.sum()/df.retention_1.count()
 print(str(oneday*100)+"%")
 
 ```
-Output:
+
+#### Output:
 
 44.52% Return the day following an installation of the product.
+
+Slightly less than half? Ok, just out of curiousity is there any fundamental difference in our two user populations from the
+start regardless of version impact? This time, let's do as we did above, but this time group them by version group and see
+how the numbers pan out.
 
 ```Python
 
@@ -201,13 +243,14 @@ oneday = df.retention_1.groupby(df.version).sum()/df.retention_1.groupby(df.vers
 print(oneday)
 
 ```
+
 Output:
 
 gate_30    44.818792
 
 gate_40    44.228275
 
-It looks like regardless of version, next day returns are the same between groups.
+It looks like regardless of version, next day returns are essentially the same between our experimental groups.
 
 # Bootstrapping Means - Sampling
 
