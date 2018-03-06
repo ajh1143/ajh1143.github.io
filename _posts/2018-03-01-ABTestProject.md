@@ -123,7 +123,7 @@ print(B)
 ```
 > Output:
 
-```
+```Python
 
 version
 False    45489
@@ -244,27 +244,28 @@ ax = boot_1d['difference'].plot.kde()
 ```
 <INSERT IMAGE>
 
+# Calculating the probability that 1-day retention is greater when the gate is at level 30
+
 ```Python
 
-# Calculating the probability that 1-day retention is greater when the gate is at level 30
 prob = (boot_1d['diff'] > 0).sum() / len(boot_1d['diff'])
-
-# Pretty printing the probability
 print(str(prob*100)+"%")
 
 ```
 
+# Calculating 7-day retention for both AB-groups
+
 ```Python
 
-# Calculating 7-day retention for both AB-groups
 sevenday = df.retention_7.sum()/df.retention_7.count()
 print(sevenday)
 
 ```
 
+# Creating a list with bootstrapped means for each AB-group
+
 ```Python
 
-# Creating a list with bootstrapped means for each AB-group
 boot_7d = []
 for i in range(500):
     boot_mean = df.retention_7.sample(frac=1, replace=True).groupby(df.version).mean()
