@@ -154,6 +154,9 @@ ax.set_ylabel("userid")
 
 ```
 
+<img src="/Images/AB_Folder/total_played.png" class="inline"/><br>
+
+
 # Group Distributions: A vs B Total Plays
 
 ```Python
