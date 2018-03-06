@@ -2,10 +2,9 @@
 layout: post
 title: Mobile Game AB Testing
 ---
+<img src="/Images/ABTest.jpg" class="inline"/><br>
 We've talked about AB testing in an earlier post, now is the time to give a full-spectrum run through a real dataset courtesy 
 of DataCamp.
-
-<img src="/Images/ABTest.jpg" class="inline"/><br>
 
 The fine folks at DataCamp (http://www.datacamp.com) released a project for AB testers to play with. I highly recommend
 any data-curious people, from novice to experienced, to give their service a shot.
