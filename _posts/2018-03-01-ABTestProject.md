@@ -242,6 +242,7 @@ boot_1d['difference'] = (boot_1d['gate_30'] - boot_1d['gate_40']) /  boot_1d['ga
 ax = boot_1d['difference'].plot.kde()
 
 ```
+
 <INSERT IMAGE>
 
 # Calculating the probability that 1-day retention is greater when the gate is at level 30
@@ -277,7 +278,11 @@ boot_7d = pd.DataFrame(boot_7d)
 # Adding a column with the % difference between the two AB-groups
 boot_7d['diff'] = (boot_7d['gate_30'] - boot_7d['gate_40']) /  boot_7d['gate_40'] * 100
 
-# Ploting the bootstrap % difference
+```
+
+```Python
+
+# Plotting the bootstrap % difference
 ax = boot_7d['diff'].plot.kde()
 ax.set_xlabel("% difference in means")
 
@@ -288,3 +293,5 @@ prob = (boot_7d['diff'] > 0).sum() / len(boot_7d['diff'])
 print(prob)
 
 ```
+
+<INSERT IMAGE>
