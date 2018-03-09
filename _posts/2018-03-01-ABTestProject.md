@@ -4,9 +4,9 @@ title: Mobile Game AB Testing
 ---
 <img src="/Images/ABTest.jpg" class="inline"/><br>
 We've talked about AB testing in an earlier post, now is the time to give a full-spectrum run through a real dataset courtesy 
-of DataCamp.
+of [DataCamp](https://www.datacamp.com).
 
-The fine folks at DataCamp (http://www.datacamp.com) released a project for AB testers to play with. I highly recommend
+The fine folks at DataCamp released a project for AB testers to play with focused around data from a game called ==Cookie Cats==. I highly recommend
 any data-curious people, from novice to experienced, to give their service a shot.
 
 Today's project is centered around AB testing in mobile games development, we're going to model the base DataCamp work flow 
