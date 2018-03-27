@@ -151,4 +151,12 @@ plt.show()
 
 <img src="/Images/Tips/Box_Tips.png" class="block"/><br>
 
- 
+# Binarize Data - The Easy Way
+
+```Python
+
+df1['sex'] = pd.Categorical(df1.sex).codes
+
+```
+
+<img src="/Images/Tips/Binarize_Tips.jpg" class="block"/><br>
