@@ -117,8 +117,11 @@ plt.show()
 <img src="/Images/Tips/S_Tips.png" class="block"/><br>
 
 #### Observations: Men Vs Women
-Minimum: The same minimum tips left by men and women were the same, a single US Dollar.
+
+Min: The same minimum tips left by men and women were the same, a single US Dollar.
+
 Mean:    Women: $2.75 vs Men: $3.00
+
 Max:     Women: Just shy of $7.00 vs Men: $10.00
 
 In this sample, it looks like men tip marginally more on average, and at least a single man left a larger tip, though we don't yet know the price of his total bill. 
@@ -174,7 +177,9 @@ plt.show()
 #### Observations: Sex Vs Smoker 
 
 Min:  $1USD regardless of smoker categorization
+
 Mean: Essentially equal across groups, interesting!
+
 Max:  Aha, our big tipper is a smoker, who visits on Saturday! I feel like we're building a psychological profile. Men appear to leave larger maximum tips regardless of smoking, but it's also interesting that female smokers leave the larger maximum tip compared to non-smoking females.
 
 ### Sex, Day of the Week, Smoker and Tips
