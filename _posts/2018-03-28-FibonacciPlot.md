@@ -3,7 +3,7 @@ layout: post
 title: "Modeling Fibonacci"
 ---
 
-<img src="/Images/NLP_Images/nlp_title.jpg" class="inline"/><br>
+<img src="/Images/Fibonacci/FibTitle.jpg" class="inline"/><br>
 A classic model of exponential growth 
 
 Fibonacci was a smart guy, let's dig into one of his classic problems.
@@ -186,3 +186,8 @@ if __name__ == "__main__":
     data = x.FibonacciSequence(10)
     x.ScatterSequence(data)
 ```
+
+And our output...
+
+
+<img src="/Images/Fibonacci/FibPlot.png" class="inline"/><br>
