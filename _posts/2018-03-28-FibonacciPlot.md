@@ -16,7 +16,7 @@ We'll model this algorithm with python and generate a scatter plot via MatPlotLi
 
 First, we need to import our libraries, in this case we'll be using MatPlotLib, and we'll be setting our style to ggplot.
 
-```
+```Python
 
 import matplotlib.pyplot as plt
 plt.style.use('ggplot')
@@ -25,7 +25,7 @@ plt.style.use('ggplot')
 
 Now, we can begin building a class, let's call it FibonacciScatter.
 
-```
+```Python
 class FibonacciScatter(object):
 ```
 
@@ -34,7 +34,7 @@ Great, now we should work on the guts of the algorithm by building a function we
 Let's also make it a little more flexible, by creating a parameter 'length' which will allow us to control the number
 of Fibonacci numbers we want to generate at run time. 
 
-```
+```python
 
 def FibonacciSequence(self, length):
     """
