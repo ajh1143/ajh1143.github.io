@@ -34,7 +34,7 @@ Great, now we should work on the guts of the algorithm by building a function we
 Let's also make it a little more flexible, by creating a parameter 'length' which will allow us to control the number
 of Fibonacci numbers we want to generate at run time. 
 
-```python
+```Python
 
 def FibonacciSequence(self, length):
     """
@@ -47,7 +47,7 @@ def FibonacciSequence(self, length):
 My approach is to first create to variables, called 'p1' and 'p2', these will store two positions/values of Fibonacci numbers,
 starting with p1 = 0, and p2 = 1.
 
-```
+```Python
 
 p1, p2 = 0, 1
 
@@ -55,14 +55,14 @@ p1, p2 = 0, 1
 
 Let's then create an empty list called 'fibList', which I'm sure you've guessed, will hold our list of Fibonacci values. 
 
-```
+```Python
 fibList = []
 ```
 
 Python for loops are easy and fun, and make this an casual algorithm to generate. Let's look at the code and then go through each
 step together. 
 
-```
+```Python
 
 for each in range(length):
     fibList.append(p1)
@@ -77,7 +77,7 @@ steps 10 times.
 Let's check our output to make sure we're on the right track, we'll do this by creating a list of the first 10 numbers
 in the solved Fibonacci sequence, and testing that our output is equal.
 
-```
+```Python
 
 class FibonacciScatter(object):
     def FibonacciSequence(self, length):
@@ -104,7 +104,7 @@ if __name__ == "__main__":
 
 Result: 
 
-```
+```Python
 
 [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 True
@@ -114,7 +114,7 @@ Ok, it looks like we did it. Let's now take a visual approach, let's follow thro
 
 Let's call our next method 'ScatterSequence', which accepts a parameter 'seq'.
 
-```
+```Python
 def ScatterSequence(self, seq):
     """
     :param seq: List of fibonacci data points
@@ -125,7 +125,8 @@ def ScatterSequence(self, seq):
 Now the guts.
 
 Let's create two empty lists, `x` and `y`.
-```
+
+```Python
 x = []
 y = []
 ```
@@ -133,7 +134,7 @@ y = []
 Once again, let's use a for loop, but this time, instead of controlling the number of steps based on a range, let's use
 enumerate on our 'seq'. With each pass, we'll append the index position into x, and the value into y.
 
-```
+```Python
 for position, value in enumerate(seq):
     x.append(position)
     y.append(value)
@@ -141,13 +142,13 @@ for position, value in enumerate(seq):
 
 Our X and Y lists should be populated, let's go ahead and start building a scatter plot.
 
-```
+```Python
 plt.scatter(x, y)
 ```
 
 Let's set a title and label our axes...
 
-```
+```Python
 plt.title("Fibonacci Sequence")
 plt.xlabel("X")
 plt.ylabel("Y")
@@ -157,7 +158,7 @@ plt.show()
 
 That should be enough! Let's go ahead and look at a unified view of our code for the plotting method.
 
-```
+```Python
 
 def ScatterSequence(self, seq):
     """
@@ -180,7 +181,7 @@ def ScatterSequence(self, seq):
  
 To run this bad boy, we'll create an instance of FibonacciScatter() and walk through our methods. 
 
-```
+```Python
 if __name__ == "__main__":
     x = FibonacciScatter()
     data = x.FibonacciSequence(10)
