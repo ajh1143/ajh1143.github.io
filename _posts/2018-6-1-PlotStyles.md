@@ -3,7 +3,7 @@ layout: post
 title: "MatPlotLib: Sampling Plot Styles"
 ---
 
-<img src="/Images/Styles/style_classic.png" class="inline"/><br>
+<img src="/Images/Styles/style_title.jpg" class="inline"/><br>
 Test your plot in every style. 
 
 ```Python   
