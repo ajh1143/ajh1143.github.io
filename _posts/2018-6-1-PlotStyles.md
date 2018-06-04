@@ -7,17 +7,17 @@ title: "MatPlotLib: Sampling Plot Styles"
 Test your plot in every style. 
 
 
-# Import MatPlot Lib
+# Import MatPlotLib
 
 
-``` 
+```Python3 
 
 import matplotlib.pyplot as plt
 
 ```
 
 # Create a Class
-```
+```Python3
 
 class PlotChoices():
 
@@ -26,7 +26,7 @@ class PlotChoices():
 # Methods
 
 ## Generate List of Possible Styles
-```  
+```Python3  
 
     def PlotStyles(self):
     """
@@ -39,7 +39,7 @@ class PlotChoices():
 
 ## Generate Plots & Save Images To Folder
 
-```python3   
+```Python3 
 
     def barPlots(self, dict_data, types):
     """
