@@ -44,7 +44,7 @@ class PlotChoices():
     def barPlots(self, dict_data, types):
     """
     Function: Uses dictionary dataset to create 23 different bar plots with different 
-    styles selected
+              styles selected
     Args:     dict_data: your datase, expected to be in dictionary format
               types: List of style names to use for each plot generated
           
