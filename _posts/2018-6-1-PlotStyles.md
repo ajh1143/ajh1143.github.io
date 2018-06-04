@@ -68,7 +68,7 @@ class PlotChoices():
 
 ```
 
-## if __name__ == "__main__"
+## Run It
 
 ``` Python3
 if __name__ == "__main__"
