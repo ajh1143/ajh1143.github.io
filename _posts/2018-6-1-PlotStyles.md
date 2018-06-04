@@ -7,6 +7,7 @@ title: "MatPlotLib: Sampling Plot Styles"
 Test your plot in every style. 
 
 ```Python   
+
 import matplotlib.pyplot as plt
 
 class PlotChoices():
@@ -31,7 +32,8 @@ class PlotChoices():
             plt.tight_layout()
             plt.savefig('PATH_TO_YOUR_OUTPUT_FOLDER'+each+'.png')
             plt.clf()
-  ```
+
+```
 
 
 ## Classic
