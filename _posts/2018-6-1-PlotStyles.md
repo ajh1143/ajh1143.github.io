@@ -6,6 +6,34 @@ title: "MatPlotLib: Sampling Plot Styles"
 <img src="/Images/Styles/style_classic.png" class="inline"/><br>
 Test your plot in every style. 
 
+    ```Python   
+    import matplotlib.pyplot as plt
+    
+    class PlotChoices():
+        def PlotStyles(self):
+            styles = plt.style.available
+            return styles
+
+        def barPlots(self, dict_data, types):
+            if dict_data == 'default':
+                dict_data = {'Group A': 25, 'Group B': 50, 'Group C': 75}
+            else:
+                dict_data = dict_data
+            names = list(dict_data.keys())
+            values = list(dict_data.values())
+            plt.figure(figsize=(8, 6))
+            for each in types:
+                plt.style.use(each)
+                plt.bar(range(len(dict_data)), values, tick_label=names)
+                plt.title('Style = ' + each)
+                plt.xlabel('X-Axis Label')
+                plt.ylabel('Y-Axis Label')
+                plt.tight_layout()
+                plt.savefig('PATH_TO_YOUR_OUTPUT_FOLDER'+each+'.png')
+                plt.clf()
+      ```
+
+
 ## Classic
 <img src="/Images/Styles/style_classic.png" class="inline"/><br>
 
