@@ -68,6 +68,15 @@ class PlotChoices():
 
 ```
 
+## if __name__ == "__main__"
+
+``` Python3
+if __name__ == "__main__"
+    instance = PlotChoices()
+    style = instance.PlotStyles()
+    instance.barPlots('default', style)
+```
+
 # Our Results
 
 ## Classic
