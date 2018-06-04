@@ -66,7 +66,7 @@ class PlotChoices():
 <img src="/Images/Styles/style_seaborn-whitegrid.png" class="inline"/><br>
 
 ## Seaborn Notebook
-<img src="/Images/Styles/style_seaborn-notebook" class="inline"/><br>
+<img src="/Images/Styles/style_seaborn-notebook.png" class="inline"/><br>
 
 ## Greyscale
 <img src="/Images/Styles/style_grayscale.png" class="inline"/><br>
