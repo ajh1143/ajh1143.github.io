@@ -6,16 +6,49 @@ title: "MatPlotLib: Sampling Plot Styles"
 <img src="/Images/Styles/style_title.jpg" class="inline"/><br>
 Test your plot in every style. 
 
+
+# Import MatPlot Lib
+
+
 ```Python3   
 
 import matplotlib.pyplot as plt
 
+```
+
+# Create a Class
+```Python3   
+
 class PlotChoices():
+
+```
+
+# Methods
+
+## Generate List of Possible Styles
+```Python3   
+
     def PlotStyles(self):
+    """
+    Generate amd returns a list of the top 23 styles native to MatPlotLib
+    """
         styles = plt.style.available
         return styles
+        
+```
+
+## Generate Plots & Save Images To Folder
+
+```Python3   
 
     def barPlots(self, dict_data, types):
+    """
+    Function: Uses dictionary dataset to create 23 different bar plots with different styles selected
+    Args:     dict_data: your datase, expected to be in dictionary format
+              types: List of style names to use for each plot generated
+          
+    Note:     Define the dict_data parameter as 'default' to use a pre-set dataset
+    """
         if dict_data == 'default':
             dict_data = {'Group A': 25, 'Group B': 50, 'Group C': 75}
         else:
@@ -35,6 +68,7 @@ class PlotChoices():
 
 ```
 
+# Our Results
 
 ## Classic
 <img src="/Images/Styles/style_classic.png" class="inline"/><br>
