@@ -7,7 +7,7 @@ title: "Missing Data? Impute it."
 Uh oh.
 
 
-#### Imports
+## Imports
 
 
 ```Python3
@@ -18,7 +18,7 @@ from tkinter import filedialog, messagebox
 
 ```
 
-#### Class
+## Class
 
 
 ```Python3
@@ -28,7 +28,7 @@ class MissingDataImputer(object):
 ```
 
 
-#### Selecting Data Files with a tkinter GUI
+## Selecting Data Files with a tkinter GUI
 
 
 ```Python3
@@ -54,7 +54,7 @@ def getFilePath(self):
 <img src="/Images/MissingData/gui2.jpg" class="inline"/><br>
 
 
-#### Reading Files
+## Reading Files
 
 
 ```Python3
@@ -70,7 +70,7 @@ def getFilePath(self):
 ```
 
 
-#### Raw Data to Pandas Dataframe
+## Raw Data to Pandas Dataframe
 
 
 ```Python3
@@ -87,7 +87,7 @@ def getFilePath(self):
 ```
 
 
-#### Begin Investigation   
+## Begin Investigation   
 
 
 ```Python3
@@ -114,7 +114,7 @@ def getFilePath(self):
 ```
 
 
-#### Missing Data Detected, What Now?
+## Missing Data Detected, What Now?
 
 
 ```Python3
@@ -132,7 +132,7 @@ def getFilePath(self):
 ```
 
 
-#### Run It
+## Run It
 
 
 ```Python3
