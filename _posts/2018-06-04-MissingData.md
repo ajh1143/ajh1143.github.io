@@ -49,6 +49,10 @@ def getFilePath(self):
     return file_path
 ```
 
+<img src="/Images/MissingData/gui1.jpg" class="inline"/><br>
+
+<img src="/Images/MissingData/gui2.jpg" class="inline"/><br>
+
 
 #### Reading Files
 
