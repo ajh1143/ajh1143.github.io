@@ -3,7 +3,7 @@ layout: post
 title: "Missing Data? Impute it."
 ---
 
-<img src="/Images/Styles/style_title.jpg" class="inline"/><br>
+<img src="/Images/MissingData/Webp.net-resizeimage.jpg" class="inline"/><br>
 Uh oh.
 
 
