@@ -7,6 +7,12 @@ title: "MatPlotLib: Sampling Plot Styles"
 Test your plot in every style. 
 
 
+Data visualization is a powerful communication tool. Your plot style can help you communicate results better in your next presentation or report. 
+
+Let's build a tool that will let us test all of the popular pre-made styles across your dataset, so you can easily pick and choose what you like!
+
+Let's get started. 
+
 # Import MatPlotLib
 
 
@@ -26,6 +32,9 @@ class PlotChoices():
 # Methods
 
 ## Generate List of Possible Styles
+
+We can use `plt.style.available` to create a list called `styles` that contains the popular choices stored by the name used to set the plot. We'll return this list and use it in the next step.
+
 ```Python3  
 
     def PlotStyles(self):
@@ -38,6 +47,14 @@ class PlotChoices():
 ```
 
 ## Generate Plots & Save Images To Folder
+
+Now, we can take our `styles` list and feed it into the next step via `barPlot()` to create 23 bar plots built with each style type.
+
+We will also allow a parameter called `dict_data`, which will let you import a dictionary based data-set to be tested with. 
+
+In addition, if you'd simply like to visualize the plot styles, I've included a default dictionary dataset. By entering the parameter `default` in place of `dict_data`, you can use the default dictionary.
+
+We will also use the `plt.savefig()` feature to save our results into a file for simple browsing and later reference. You will need to enter an output path, make note of where it's outputting!
 
 ```Python3 
 
@@ -77,6 +94,8 @@ if __name__ == "__main__"
     style = instance.PlotStyles()
     instance.barPlots('default', style)
 ```
+
+Great! Let's check out what we've created.
 
 # Our Results
 
