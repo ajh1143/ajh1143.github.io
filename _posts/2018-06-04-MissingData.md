@@ -7,8 +7,16 @@ title: "Missing Data? Impute it."
 Uh oh.
 
 
+A common problem with datasets is missing values in the the rows. It's a problem that can result from poor data collection, either through inconsistent methodologies, or subsequent changes to protocols and databases during the collection phase. 
+
+One tactic to remedy the poor quality data, is to impute (i.e., replace) the missing data points with a quantified measurement. It goes without saying, that this can be risky. But, it can also be a relatively safe practice under certain conditions. If the dataset is large, and the missing data is relatively small, we can interpolate average numerical values from the existing data. In theory, this will allow us to use the rows containing missing data without skewing our results too harshly.
+
+Today, we'll do exactly that using a Python program I wrote.
+
+
 ## Imports
 
+We'll be using Pandas and TKinter. Pandas for the analytics, and TKinter to generate an easy GUI interface to find your file.
 
 ```Python3
 
@@ -30,6 +38,7 @@ class MissingDataImputer(object):
 
 ## Selecting Data Files with a tkinter GUI
 
+A file selector is a great way to develop an interface for users. In my experience, it's much easier for users to simply select the file they want, rather than find the path and enter it into a command line interface. Tkinter is a great tool to accomplish this quickly, as I have constructed below. 
 
 ```Python3
 
@@ -56,6 +65,7 @@ def getFilePath(self):
 
 ## Reading Files
 
+Next, we want to load the file we have specified, and store it for further processing, we'll do this with `get_file`.
 
 ```Python3
     def get_file(self, filename):
@@ -72,6 +82,7 @@ def getFilePath(self):
 
 ## Raw Data to Pandas Dataframe
 
+We have the raw data, now let's construct a DataFrame for easy manipulation via `make_dataframe` outlined below.
 
 ```Python3
     #Convert Raw File to DataFrame
@@ -89,6 +100,9 @@ def getFilePath(self):
 
 ## Begin Investigation   
 
+Our data is in place, and in a form we can use! Let's get started with our goal, identifying missing data!
+
+We will search and count the number of missing row indices using list comprehension to iterate over each column. If no missing data is found, we'll simply print the message to the user and end the program with our worried minds sated. 
 
 ```Python3
 
@@ -116,6 +130,7 @@ def getFilePath(self):
 
 ## Missing Data Detected, What Now?
 
+If we identified missing data, we'll use the method `impute()` to rectify the problem. We'll pass our dataframe and list of missing values into this method and use our `interpolate()` function to impute an interpolated value in place of the missing indices. 
 
 ```Python3
     def impute(self, input_df, missing):
@@ -131,6 +146,9 @@ def getFilePath(self):
         return input_df
 ```
 
+We can then run `check_integrity()` on our cleaned dataframe to verify that no missing values are present. 
+
+It's important to note that this obviously won't work for binary choices, booleans, strings, or other non-numeric row values. We could still handle them, but we would need different processes and a new post! 
 
 ## Run It
 
