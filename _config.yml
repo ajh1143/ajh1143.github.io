@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-
+theme: jekyll-theme-slate
 # Name of your site (displayed in the header)
 name: Andrew J. Holt
 
@@ -78,8 +78,6 @@ gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   
- 
-theme: jekyll-theme-slate
 
 # Exclude these files from your production _site
 exclude:
