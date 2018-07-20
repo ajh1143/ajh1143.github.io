@@ -1,7 +1,7 @@
 #
 # This file contains configuration flags to customize your site
 #
-theme: jekyll-theme-slate
+theme: jekyll-theme-midnight
 # Name of your site (displayed in the header)
 name: Andrew J. Holt
 
