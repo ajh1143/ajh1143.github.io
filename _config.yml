@@ -13,7 +13,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 #
 # Flags below are optional
 #
-remote_theme: fongandrew/hydeout
+remote_theme: broccolini/swiss
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
