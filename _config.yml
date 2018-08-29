@@ -14,7 +14,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Flags below are optional
 #
 
-theme: qwtel/hydejack
+remote-theme: qwtel/hydejack
 #theme: jekyll-theme-slate
 # Includes an icon in the footer for each username you enter
 footer-links:
