@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # Me
 
-<img src="https://github.com/ajh1143/blob/master/images/2018.JPG" class="inline" width = 300px/><br>
+<img src="https://github.com/ajh1143/ajh1143.github.io/blob/master/Images/2018.JPG" class="inline" width = 300px/><br>
 # Languages:
 
 Python [Pandas / Numpy / Matplotlib / Sci-Kit Learn]
