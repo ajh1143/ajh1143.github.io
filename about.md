@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 # Me
-<img src="/Images/2018.JPG" class="inline"/><br>
+<img src="/Images/2018.JPG" class="inline" width =100px/><br>
 # Languages:
 
 Python [Pandas / Numpy / Matplotlib / Sci-Kit Learn]
