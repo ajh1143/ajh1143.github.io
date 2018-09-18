@@ -3,7 +3,8 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-
+# Me
+<img src="/Images/2018.jpg" class="inline"/><br>
 # Languages:
 
 Python [Pandas / Numpy / Matplotlib / Sci-Kit Learn]
