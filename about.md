@@ -4,7 +4,8 @@ title: About Me
 permalink: /about/
 ---
 # Me
-<img src="/Images/2018.JPG" class="inline" width =300px/><br>
+
+<img src="https://github.com/ajh1143/KNN_ModelSelector/blob/master/images/2018.JPG" class="inline" width = 300px/><br>
 # Languages:
 
 Python [Pandas / Numpy / Matplotlib / Sci-Kit Learn]
