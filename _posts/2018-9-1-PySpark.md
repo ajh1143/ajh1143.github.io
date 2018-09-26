@@ -2,8 +2,8 @@
 layout: post
 title: "PySpark"
 ---
-It's Electric!
 <img src="/Images/PySpark/PySpark_title.jpg" class="inline"/><br>
+It's Electric!
 
 # What is PySpark?
 PySpark exposes the Apache Spark programming model to Python through a feature rich API. Utilize the ease of python scripting for your 
