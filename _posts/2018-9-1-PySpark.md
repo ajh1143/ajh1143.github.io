@@ -27,12 +27,11 @@ can think of the SparkContext as your connection to the cluster and the SparkSes
 ## Viewing Available Tables
 
 ```Python3
-# Print the tables in the catalog
- / DataFrame
 print(spark.catalog.listTables())
 ```
 
 # Querying Data
+
 ## Building Queries
 ```Python3
 query = "FROM table SELECT *"
