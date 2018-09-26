@@ -24,12 +24,6 @@ Then we can do `spark = sc.SparkSession()` and make calls through spark
 To start working with Spark DataFrames, you first have to create a SparkSession object from your SparkContext. You
 can think of the SparkContext as your connection to the cluster and the SparkSession as your interface with that connection.
 
-## Viewing Available Tables
-
-```Python3
-print(spark.catalog.listTables())
-```
-
 # Querying Data
 
 ## Building Queries
@@ -48,19 +42,43 @@ table_query = spark.sql(query)
 table_query.show()
 ```
 
+# Create DataFrames
+
 ## Convert Query Results to a DataFrame
 ```Python3
 df = table_query.toPandas()
 ```
 
+# Create Clusters
+
 ## Convert DataFrame to a Spark Cluster
 ```Python3
 spark_df = spark.createDataFrame(df)
 ```
+
+# Tables
+
 ## Create temporary table
 ```Python3
 spark_df.createOrReplaceTempView("temp")
 ```
+
+## Creating a New Table
+```Python3
+table = spark.table("title")
+```
+
+## Add a New Column
+```Python3
+table = table.withColumn("new_Column", table.oldColumn + 1)
+```
+## Viewing Available Tables
+
+```Python3
+print(spark.catalog.listTables())
+```
+
+# CSV Files 
 
 ## Convert CSV file to Spark Cluster
 ```Python3
@@ -77,12 +95,3 @@ fileContents = spark.read.csv(file_path, header=True)
 fileContents.show()
 ```
 
-## Creating a New Table
-```Python3
-table = spark.table("title")
-```
-
-## Add a New Column
-```Python3
-table = table.withColumn("new_Column", table.oldColumn + 1)
-```
