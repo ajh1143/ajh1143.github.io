@@ -16,13 +16,34 @@ Cluster nodes are slaves controlled by a master, which delegates data delivery a
 # Why is it useful?
 It's an optimized solution for very large data sets and processes that are too large and computationally expensive for a single machine or small set up.
 
-## Getting Started
-How do we connect to a cluster? We create an instance of SparkContext, `sc = SparkContext()`
+# Getting Started
 
-Then we can do `spark = sc.SparkSession()` and make calls through spark
+## Spark Context
+How do we connect to a cluster? We first create an instance of SparkContext after importing the module.
 
-To start working with Spark DataFrames, you first have to create a SparkSession object from your SparkContext. You
-can think of the SparkContext as your connection to the cluster and the SparkSession as your interface with that connection.
+```Python3
+from pyspark import SparkContext
+
+sc = SparkContext()
+```
+
+## Spark Session
+
+We can now create an interface to our connection by creating a new `SparkSession` to make calls to our spark cluster.
+
+```Python3
+Import SparkSession from pyspark.sql
+from pyspark.sql import SparkSession
+
+spark = sc.SparkSession() 
+```
+
+Alternatively, we could err on the side of caution and utilize `.getOrCreate()` which either creates a new session, or accesses
+a pre-existing session as seen below.
+
+```Python3
+spark = SparkSession.builder.getOrCreate()
+```
 
 # Querying Data
 
