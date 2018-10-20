@@ -1,15 +1,12 @@
 ---
 ---
 
-
-
 //
 // IMPORTS
 //
 
 @import "reset";
 @import "variables";
-@import "{{ site.theme }}";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -18,12 +15,10 @@
 
 html {
   font-size: 100%;
-  overflow:auto;
-  overflow-style:marquee,panner;
 }
 
 body {
-  background: $white;
+	background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -161,7 +156,8 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $darkGray;
+  border-bottom: 1px solid $lightGray;
+
   @include mobile {
     text-align: center;
   }
@@ -247,7 +243,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 2px solid #F0F0F0;
+  border-bottom: 1px solid $lightGray;
 }
 
 .posts > .post:last-child {
