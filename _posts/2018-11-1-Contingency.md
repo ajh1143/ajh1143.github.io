@@ -6,8 +6,8 @@ title: "Streamlining Contingency Tables"
 Medical Statistics: Scripted
 
 
-# Contingency Table Analyses
-In statistics, a contingency table is a type of table in a matrix format that displays the frequency distribution of the variables.
+# Contingency Table
+A contingency table is a matrix formatted view of the frequency distribution of given variables.
 
 ## 2x2 Contingency Table 
 ```Python3
