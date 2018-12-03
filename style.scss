@@ -18,7 +18,9 @@
 
 html {
   font-size: 100%;
-  overflow:hidden;
+  overflow:auto;
+  overflow-y:hidden;
+  overflow-x:hidden;
   overflow-style:marquee,panner;
 }
 
