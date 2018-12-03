@@ -16,6 +16,14 @@ Cluster nodes are slaves controlled by a master, which delegates data delivery a
 # Why is it useful?
 It's an optimized solution for very large data sets and processes that are too large and computationally expensive for a single machine or small set up.
 
+# Spark Jobs?    
+A directed acyclic graph of procedural work flows. 
+
+# Resilient Distributed Datasets
+Core data structure used in the Spark architecture. This is a fundamental reason for using Spark. RDD's allow the parallel operations to be performed, increasing the speed of the executions. 
+
+# Resilient Distributed Datasets
+
 # Getting Started
 
 ## Spark Context
@@ -137,4 +145,5 @@ View your data by using `.show()`
 ```Python3
 fileContents.show()
 ```
+
 
