@@ -22,8 +22,6 @@ A directed acyclic graph of procedural work flows.
 # Resilient Distributed Datasets
 Core data structure used in the Spark architecture. This is a fundamental reason for using Spark. RDD's allow the parallel operations to be performed, increasing the speed of the executions. 
 
-# Resilient Distributed Datasets
-
 # Getting Started
 
 ## Spark Context
