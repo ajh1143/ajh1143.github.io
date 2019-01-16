@@ -2,7 +2,7 @@
 layout: post
 title: "Practice Problems: Statistics, Hypothesis Testing and Visualization"
 ---
-<img src="/Images/MedStats/stats_head.png" height="150" width="300" class="inline"/><br>
+<img src="/Images/MedStats/stats_head.png"  width = "300" height = "150" class="inline"/><br>
 Novel Python solutions to end-of-chapter statistics problems from the 4th Ed. of '**Medical Statistics**' from *Campbell, Machin, and Walters*. 
 
 ## Chapter 2 : Displaying Categorical Data    
