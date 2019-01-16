@@ -5,6 +5,8 @@ title: "Practice Problems: Statistics, Hypothesis Testing and Visualization"
 <img src="/Images/MedStats/stats_head.png"  width = "300" height = "150" class="inline"/><br>
 Novel Python solutions to end-of-chapter statistics problems from the 4th Ed. of '**Medical Statistics**' from *Campbell, Machin, and Walters*. 
 
+# Work In Progress!
+
 ## Chapter 2 : Displaying Categorical Data    
 ### Clustered bar chart, thromboembolic women by blood type    
 ```Python3
@@ -25,6 +27,7 @@ plt.xticks(rotation='horizontal')
 #display plot
 plt.show()
 ```
+
 ## Chapter 3 : Displaying Quantitative Data   
 ```Python3
 """
