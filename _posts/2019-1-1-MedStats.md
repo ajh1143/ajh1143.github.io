@@ -2,7 +2,7 @@
 layout: post
 title: "Practice Problems: Statistics, Hypothesis Testing and Visualization"
 ---
-<img src="/Images/MedStats/stats_head.png" width = 300 height=150 class="inline"/><br>
+<img src="/Images/MedStats/stats_head.png" height=150 width=300 class="inline"/><br>
 Novel Python solutions to end-of-chapter statistics problems from the 4th Ed. of '**Medical Statistics**' from *Campbell, Machin, and Walters*. 
 
 ## Chapter 2 : Displaying Categorical Data    
@@ -121,13 +121,13 @@ def exercise_i(data):
 exercise_i(SAMPLE_DATA)
 ```
 #### Bokeh Dot Plot Output    
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/e_i_bokeh.png" class="inline"/><br>
+<img src="/Images/MedStats/e_i_bokeh.png" class="inline"/><br>
 #### MatPlotLib Histogram Output    
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/ei_hist.png" class="inline"/><br>
+<img src="/Images/MedStats/ei_hist.png" class="inline"/><br>
 #### MatPlotLib KDE (Unshaded AOC)
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/e_1_unshaded.png" class="inline"/><br>
+<img src="/Images/MedStats/e_1_unshaded.png" class="inline"/><br>
 #### Seaborn KDE (Shaded AOC)
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/e_1_shaded.png" class="inline"/><br>
+<img src="/Images/MedStats/e_1_shaded.png" class="inline"/><br>
 
 ### Calculate Mean, Median, Mode    
 **Mean** Numpy Solution: numpy.mean(data)    
@@ -145,7 +145,7 @@ def exercise_ii(data):
  exercise_ii(SAMPLE_DATA)
  ```
  #### Mean, Median, Mode Output    
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/e_ii.png" class="inline"/><br>
+ <img src="/Images/MedStats/e_ii.png" class="inline"/><br>
 
  ### Calculate Range, Inter-quartile Range, Standard Deviation    
  **Range** NumPy Solution: numpy.abs(max(data) - min(data))    
@@ -161,4 +161,4 @@ def exercise_iii(data):
 exercise_iii(SAMPLE_DATA)
 ```
  ####  Range, Inter-quartile Range, Standard Deviation Output  
-<img src="https://github.com/ajh1143/MedicalStatistics/blob/master/Chapter_3/Images/e_iii.png" class="inline"/><br>
+ <img src="/Images/MedStats/e_iii.png" class="inline"/><br>
