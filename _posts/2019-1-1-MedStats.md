@@ -70,8 +70,6 @@ import numpy as np
 from scipy import stats
 from bokeh.plotting import figure, show
 from collections import Counter
-
-SAMPLE_DATA = [18, 41, 24, 28, 71, 52, 15, 20, 21, 31, 16, 24, 33, 44, 20, 24, 16, 64, 24, 18, 20, 21, 23, 22, 32]
 ```
 
 ### Dot Plot, Bar Chart of Ages of Motor Cyclists mortally injured in accidents    
