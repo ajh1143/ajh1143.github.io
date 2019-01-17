@@ -147,7 +147,7 @@ def exercise_i(data):
 
 exercise_i(SAMPLE_DATA)
 ```
-#### Bokeh Dot Plot Output    
+#### Bokeh Dot Plot Output (Cursor hovering data point displays value)   
 <img src="/Images/MedStats/e_i_bokeh.png" class="inline"/><br>
 #### MatPlotLib Histogram Output    
 <img src="/Images/MedStats/ei_hist.png" class="inline"/><br>
