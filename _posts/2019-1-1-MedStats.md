@@ -170,11 +170,11 @@ def exercise_ii(data):
     print("Mean:{}\nMedian:{}\nMode:{}".format(data_mean, data_median, mode_output))
  
  exercise_ii(SAMPLE_DATA)
- ```
- #### Mean, Median, Mode Output    
+ ```    
+#### Mean, Median, Mode Output    
  <img src="/Images/MedStats/e_ii.png" class="inline"/><br>
 
- ### Calculate Range, Inter-quartile Range, Standard Deviation    
+### Calculate Range, Inter-quartile Range, Standard Deviation    
  **Range** NumPy Solution: numpy.abs(max(data) - min(data))    
  **IQR** SciPy Solution scipy.stats.iqr(data)    
  **SD** NumPy Solution: numpy.std(data)    
@@ -186,11 +186,11 @@ def exercise_iii(data):
     print("Range:{}\nInterquartile Range:{}\nStandard Deviation:{}".format(data_range, data_quartiles, data_sd))
 
 exercise_iii(SAMPLE_DATA)
-```
- ####  Range, Inter-quartile Range, Standard Deviation Output  
+```    
+####  Range, Inter-quartile Range, Standard Deviation Output  
  <img src="/Images/MedStats/e_iii.png" class="inline"/><br>
  
- ## Problem II
+## Problem II
 ### Prompt
 ```Python3
 """Chapter 3: Displaying Quantitative Data
