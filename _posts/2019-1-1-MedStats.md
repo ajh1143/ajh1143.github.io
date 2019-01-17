@@ -27,7 +27,7 @@ plt.xticks(rotation='horizontal')
 #display plot
 plt.show()
 ```
-
+________________________________________________________________________________________________________________________________________
 ## Chapter 3 : Displaying Quantitative Data   
 ### Problem I
 ### Prompt
@@ -190,6 +190,7 @@ exercise_iii(SAMPLE_DATA)
 ####  Range, Inter-quartile Range, Standard Deviation Output  
  <img src="/Images/MedStats/e_iii.png" class="inline"/><br>
  
+________________________________________________________________________________________________________________________________________
 ## Problem II
 ### Prompt
 ```Python3
